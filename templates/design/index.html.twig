@@ -1,0 +1,34 @@
+{% extends "layouts/base.html.twig" %}
+
+{% block title %}Page Design{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ importmap('design') }}
+{% endblock %}
+
+{% block body %}
+<div class="card-containerdesign">
+    <!-- Tarjeta Sarree Light -->
+    <div class="card-design card-sarreelight">
+        <a href="{{ path('bureauafppcdI') }}">
+            <img src="{{ asset('upload/design/bureau1.png') }}" alt="Sarree Light">
+        </a>
+    </div>
+
+    <!-- Tarjeta Bureau I -->
+    <div class="card-design card-bureaux1">
+        <a href="{{ path('bureauafppcd') }}">
+            <img src="{{ asset('upload/design/bureau2.jpg') }}" alt="Bureaux II">
+        </a>
+    </div>
+
+    <!-- Tarjeta Bureaux II -->
+    <div class="card-design card-bureaux2">
+        <a href="{{ path('sareelight') }}">
+            <img src="{{ asset('upload/design/saree.jpg') }}" alt="Sarees Light">
+        </a>
+    </div>
+</div>
+
+{% endblock %}

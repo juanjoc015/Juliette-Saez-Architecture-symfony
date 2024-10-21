@@ -1,0 +1,43 @@
+@import "pages/sareeslight.scss";
+@import "pages/bureauafppcd.scss";
+@import "pages/bureauafppcdI.scss";
+
+.card-containerdesign {
+    display: grid;
+    grid-template-columns: repeat(3, 302px); // Fija el ancho de las columnas a 310px
+    gap: 70px; // Espaciado entre tarjetas
+    width: 100%;
+    height: 500px;
+    justify-content: center; // Centra el contenido dentro del contenedor
+    //centra el contenido verticalmente
+    align-items: center;
+    font-family: 'avenir', sans-serif;
+}
+
+.card-design {
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid black;
+    height: 302px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; // Asegura que las imágenes cubran todo el contenedor sin distorsión
+    }
+
+    .card-title-design {
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+        font-size: 32px;
+        color: black;
+        padding: 3px 5px;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+}

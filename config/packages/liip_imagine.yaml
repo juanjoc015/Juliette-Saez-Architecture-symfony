@@ -1,0 +1,34 @@
+liip_imagine:
+    driver: "gd"
+
+    twig:
+      mode: 'lazy'
+
+    resolvers:
+        default:
+            web_path:
+                web_root: '%kernel.project_dir%/public'
+                cache_prefix: /media/cache
+
+    filter_sets:
+      images_galery:
+        cache: default
+        quality: 100
+        filters:
+          auto_rotate: ~
+          strip: ~
+          thumbnail:
+            size: [350, 700]
+            mode: outbound
+      
+      images_proyect_boursault:
+        cache: default
+        quality: 100
+        filters:
+          auto_rotate: ~
+          strip: ~
+          thumbnail:
+            size: [400, 500]
+            mode: outbound
+
+      cache: ~

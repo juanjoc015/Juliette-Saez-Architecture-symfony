@@ -1,0 +1,54 @@
+{% extends "layouts/base.html.twig" %}
+
+{% block title %}Page Bureau II{% endblock %}
+
+{% block body %}
+<section id="afppcd">
+    <div class="row1">
+        <div class="first-plan">
+            <img src="{{ asset('upload/bureauafppcd/svg/bureauafppcd1.svg') }}" alt="photo bureau I" class="svg-gallery" data-large-src="{{ asset('upload/bureauafppcd/svg/bureauafppcd1.svg') }}">
+        </div>
+        <div class="second-plan">
+            <img src="{{ asset('upload/bureauafppcd/svg/bureauafppcd2.svg') }}" alt="photo bureau I" class="svg-gallery" data-large-src="{{ asset('upload/bureauafppcd/svg/bureauafppcd2.svg') }}">
+        </div>
+        <div class="text-container">
+        <h2>BUREAU II</h2>
+            <p> ipisicing sit amet consectetur adipisicingamet consectetur adipisicing Lorem ipsum sit amet consectetur adipisicing elit.. adipisicing dolor sit  sit amet consectetur adipisicing sit amet consectetur Lorem ipsum sit amet consectetur adipisicing adipisicing sit amet consectetur adipisicing sit amet consectetur adipisicing sit amet consectetur Lorem ipsum sit amet consectetur adipisicing adipisicing sit amet consectetur adipisicing sit amet consectetur adipisicingamet consectetur adipisicing Lorem ipsum sit amet consectetur adipisicing elit...</p>
+        </div>
+    </div>
+
+    <div class="row2">
+        <div class="third-plan">
+            <img src="{{ asset('upload/bureauafppcd/svg/bureauafppcd3.svg') }}" alt="photo bureau I" class="svg-gallery" data-large-src="{{ asset('upload/bureauafppcd/svg/bureauafppcd3.svg') }}">
+        </div>
+        <div class="photo-texture">
+            <img src="{{ asset('upload/bureauafppcd/testbureau.png') }}" alt="photo bureau I">
+        </div>
+    </div>
+</section>
+
+<div id="afppcd-modal" class="afppcd-modal hidden">
+    <span class="afppcd-close">&times;</span>
+    <img class="afppcd-modal-content" id="afppcd-modal-image" src="">
+    <a class="afppcd-prev">&#10094;</a>
+    <a class="afppcd-next">&#10095;</a>
+</div>
+
+<section id="photos_bureauII">
+
+        <div class="photos">
+            <img src="{{ asset('upload/bureauafppcd/bureauII3.jpg') }}" alt="photo-bureauII">
+            <img src="{{ asset('upload/bureauafppcd/bureauII4.jpg') }}" alt="photo-bureauII">
+            <img src="{{ asset('upload/bureauafppcd/bureauII5.jpg') }}" alt="photo-bureauII">
+            <img src="{{ asset('upload/bureauafppcd/bureauII1.jpg') }}" alt="photo-bureauII">
+            <img src="{{ asset('upload/bureauafppcd/bureauII2.jpg') }}" alt="photo-bureauII">         
+        </div>
+</section>
+
+<div id="photos-bureauII-modal" class="photos-bureauII-modal">
+    <span class="photos-bureauII-close">&times;</span>
+    <img class="photos-bureauII-modal-content" id="photos-bureauII-modal-image" src="">
+    <a class="photos-bureauII-prev">&#10094;</a>
+    <a class="photos-bureauII-next">&#10095;</a>
+</div>
+{% endblock %}

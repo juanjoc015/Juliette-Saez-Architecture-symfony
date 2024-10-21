@@ -1,0 +1,14 @@
+{% extends "layouts/base.html.twig" %}
+
+{% block title %}Page d'accueil{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }} {# On inclut les fichiers JS de la page parente #}
+    {{ importmap('home') }}
+{% endblock %}
+
+{% block body %}
+    {% include "home/partials/galery_pictures.html.twig" %}
+{% endblock %}
+
+

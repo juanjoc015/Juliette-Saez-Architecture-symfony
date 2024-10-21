@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 235.27 738.03">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke-width: .5px;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #000;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: .25px;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: none;
+      }
+
+      .cls-5 {
+        fill: #333;
+        font-family: ArialMT, Arial;
+        font-size: 17.02px;
+      }
+
+      .cls-3, .cls-4 {
+        stroke: #333;
+      }
+
+      .cls-4 {
+        stroke-miterlimit: 10;
+        stroke-width: .15px;
+      }
+    </style>
+  </defs>
+  <g id="D_faut" data-name="D√©faut">
+    <polyline class="cls-1" points="227.48 715.9 231.01 715.9 231.01 724.41 60.87 724.41 60.87 715.9 224.08 715.9"/>
+    <rect class="cls-1" x="60.87" y="520.25" width="8.51" height="195.66"/>
+    <polyline class="cls-1" points="224.08 520.25 60.87 520.25 60.87 511.74 231.01 511.74 231.01 520.25 227.48 520.25"/>
+    <rect class="cls-1" x="69.38" y="520.25" width="11.34" height="11.34"/>
+    <rect class="cls-1" x="212.73" y="520.25" width="11.34" height="11.34"/>
+    <line class="cls-1" x1="80.72" y1="531.59" x2="224.08" y2="531.59"/>
+    <rect class="cls-1" x="184.38" y="83.56" width="11.34" height="11.34"/>
+    <rect class="cls-1" x="69.38" y="83.56" width="11.34" height="11.34"/>
+    <line class="cls-1" x1="69.38" y1="94.9" x2="195.72" y2="94.9"/>
+    <polyline class="cls-1" points="199.12 205.49 202.65 205.49 202.65 214 60.87 214 60.87 205.49 195.72 205.49"/>
+    <rect class="cls-1" x="60.87" y="335.93" width="141.78" height="8.51"/>
+    <polyline class="cls-1" points="195.72 83.56 60.87 83.56 60.87 75.05 202.65 75.05 202.65 83.56 199.12 83.56"/>
+    <rect class="cls-1" x="194.15" y="344.44" width="8.51" height="167.3"/>
+    <rect class="cls-1" x="60.87" y="344.44" width="8.51" height="167.3"/>
+    <rect class="cls-1" x="60.87" y="214" width="8.51" height="121.93"/>
+    <rect class="cls-1" x="60.87" y="83.56" width="8.51" height="121.93"/>
+    <rect class="cls-1" x="69.38" y="613.82" width="153.12" height="8.51"/>
+  </g>
+  <g id="cote">
+    <line class="cls-4" x1="60.59" y1="75.05" x2="11.76" y2="75.05"/>
+    <line class="cls-4" x1="60.59" y1="724.41" x2="11.76" y2="724.41"/>
+    <line class="cls-4" x1="12.32" y1="74.2" x2="12.32" y2="387.03"/>
+    <line class="cls-4" x1="12.32" y1="412.24" x2="12.32" y2="725.26"/>
+    <polyline class="cls-4" points="13.24 75.83 11.54 74.13 11.41 74.27 13.11 75.97 13.24 75.83"/>
+    <polyline class="cls-4" points="11.41 723.63 13.11 725.33 13.24 725.19 11.54 723.49 11.41 723.63"/>
+    <line class="cls-4" x1="60.59" y1="83.56" x2="44.24" y2="83.56"/>
+    <line class="cls-4" x1="60.59" y1="205.49" x2="44.24" y2="205.49"/>
+    <line class="cls-4" x1="44.81" y1="82.71" x2="44.81" y2="135.95"/>
+    <line class="cls-4" x1="44.81" y1="152.6" x2="44.81" y2="206.34"/>
+    <polyline class="cls-4" points="45.73 84.34 44.03 82.64 43.89 82.77 45.59 84.48 45.73 84.34"/>
+    <polyline class="cls-4" points="43.89 204.71 45.59 206.41 45.73 206.27 44.03 204.57 43.89 204.71"/>
+    <line class="cls-4" x1="60.59" y1="214" x2="44.24" y2="214"/>
+    <line class="cls-4" x1="60.59" y1="335.93" x2="44.24" y2="335.93"/>
+    <line class="cls-4" x1="44.81" y1="213.15" x2="44.81" y2="266.39"/>
+    <line class="cls-4" x1="44.81" y1="283.04" x2="44.81" y2="336.78"/>
+    <polyline class="cls-4" points="45.73 214.78 44.03 213.08 43.89 213.21 45.59 214.91 45.73 214.78"/>
+    <polyline class="cls-4" points="43.89 335.15 45.59 336.85 45.73 336.71 44.03 335.01 43.89 335.15"/>
+    <line class="cls-4" x1="60.59" y1="344.44" x2="44.24" y2="344.44"/>
+    <line class="cls-4" x1="60.59" y1="511.74" x2="44.24" y2="511.74"/>
+    <line class="cls-4" x1="44.81" y1="343.59" x2="44.81" y2="419.95"/>
+    <line class="cls-4" x1="44.81" y1="436.22" x2="44.81" y2="512.59"/>
+    <polyline class="cls-4" points="45.73 345.22 44.03 343.52 43.89 343.65 45.59 345.35 45.73 345.22"/>
+    <polyline class="cls-4" points="43.89 510.96 45.59 512.66 45.73 512.52 44.03 510.82 43.89 510.96"/>
+    <line class="cls-4" x1="60.59" y1="520.25" x2="44.24" y2="520.25"/>
+    <line class="cls-4" x1="60.59" y1="715.9" x2="44.24" y2="715.9"/>
+    <line class="cls-4" x1="44.81" y1="519.39" x2="44.81" y2="609.88"/>
+    <line class="cls-4" x1="44.81" y1="626.21" x2="44.81" y2="716.75"/>
+    <polyline class="cls-4" points="45.73 521.03 44.03 519.33 43.89 519.46 45.59 521.16 45.73 521.03"/>
+    <polyline class="cls-4" points="43.89 715.12 45.59 716.82 45.73 716.69 44.03 714.99 43.89 715.12"/>
+    <line class="cls-4" x1="60.87" y1="74.77" x2="60.87" y2="54.57"/>
+    <line class="cls-4" x1="202.65" y1="74.77" x2="202.65" y2="54.57"/>
+    <line class="cls-4" x1="60.02" y1="55.13" x2="123.63" y2="55.13"/>
+    <line class="cls-4" x1="139.84" y1="55.13" x2="203.5" y2="55.13"/>
+    <polyline class="cls-4" points="61.65 54.21 59.95 55.91 60.09 56.05 61.79 54.35 61.65 54.21"/>
+    <polyline class="cls-4" points="201.87 56.05 203.57 54.35 203.44 54.21 201.73 55.91 201.87 56.05"/>
+    <line class="cls-4" x1="202.65" y1="511.45" x2="202.65" y2="498.97"/>
+    <line class="cls-4" x1="231.01" y1="511.45" x2="231.01" y2="498.97"/>
+    <line class="cls-4" x1="201.8" y1="499.54" x2="209.74" y2="499.54"/>
+    <line class="cls-4" x1="224.91" y1="499.54" x2="231.86" y2="499.54"/>
+    <polyline class="cls-4" points="203.44 498.62 201.73 500.32 201.87 500.46 203.57 498.76 203.44 498.62"/>
+    <polyline class="cls-4" points="230.23 500.46 231.93 498.76 231.79 498.62 230.09 500.32 230.23 500.46"/>
+    <line class="cls-4" x1="142.19" y1="622.33" x2="125.84" y2="622.33"/>
+    <line class="cls-4" x1="142.19" y1="715.9" x2="125.84" y2="715.9"/>
+    <line class="cls-4" x1="126.41" y1="621.48" x2="126.41" y2="660.98"/>
+    <line class="cls-4" x1="126.41" y1="677.19" x2="126.41" y2="716.75"/>
+    <polyline class="cls-4" points="127.33 623.11 125.63 621.41 125.49 621.55 127.19 623.25 127.33 623.11"/>
+    <polyline class="cls-4" points="125.49 715.12 127.19 716.82 127.33 716.69 125.63 714.99 125.49 715.12"/>
+    <line class="cls-4" x1="142.19" y1="531.59" x2="125.84" y2="531.59"/>
+    <line class="cls-4" x1="142.19" y1="613.82" x2="125.84" y2="613.82"/>
+    <line class="cls-4" x1="126.41" y1="530.74" x2="126.41" y2="564.38"/>
+    <line class="cls-4" x1="126.41" y1="580.84" x2="126.41" y2="614.67"/>
+    <polyline class="cls-4" points="127.33 532.37 125.63 530.67 125.49 530.8 127.19 532.51 127.33 532.37"/>
+    <polyline class="cls-4" points="125.49 613.04 127.19 614.74 127.33 614.6 125.63 612.9 125.49 613.04"/>
+    <line class="cls-4" x1="142.19" y1="344.44" x2="125.84" y2="344.44"/>
+    <line class="cls-4" x1="142.19" y1="511.74" x2="125.84" y2="511.74"/>
+    <line class="cls-4" x1="126.41" y1="343.59" x2="126.41" y2="419.95"/>
+    <line class="cls-4" x1="126.41" y1="436.22" x2="126.41" y2="512.59"/>
+    <polyline class="cls-4" points="127.33 345.22 125.63 343.52 125.49 343.65 127.19 345.35 127.33 345.22"/>
+    <polyline class="cls-4" points="125.49 510.96 127.19 512.66 127.33 512.52 125.63 510.82 125.49 510.96"/>
+    <line class="cls-4" x1="142.19" y1="214" x2="125.84" y2="214"/>
+    <line class="cls-4" x1="142.19" y1="335.93" x2="125.84" y2="335.93"/>
+    <line class="cls-4" x1="126.41" y1="213.15" x2="126.41" y2="266.39"/>
+    <line class="cls-4" x1="126.41" y1="283.04" x2="126.41" y2="336.78"/>
+    <polyline class="cls-4" points="127.33 214.78 125.63 213.08 125.49 213.21 127.19 214.91 127.33 214.78"/>
+    <polyline class="cls-4" points="125.49 335.15 127.19 336.85 127.33 336.71 125.63 335.01 125.49 335.15"/>
+    <line class="cls-4" x1="142.19" y1="94.9" x2="125.84" y2="94.9"/>
+    <line class="cls-4" x1="142.19" y1="205.49" x2="125.84" y2="205.49"/>
+    <line class="cls-4" x1="126.41" y1="94.05" x2="126.41" y2="142.06"/>
+    <line class="cls-4" x1="126.41" y1="158.33" x2="126.41" y2="206.34"/>
+    <polyline class="cls-4" points="127.33 95.68 125.63 93.98 125.49 94.12 127.19 95.82 127.33 95.68"/>
+    <polyline class="cls-4" points="125.49 204.71 127.19 206.41 127.33 206.27 125.63 204.57 125.49 204.71"/>
+  </g>
+  <g id="Calque_9" data-name="Calque 9">
+    <text class="cls-5" transform="translate(17.75 412.67) rotate(-90)"><tspan x="0" y="0">229</tspan></text>
+    <text class="cls-5" transform="translate(50.23 152.78) rotate(-90)"><tspan x="0" y="0">43</tspan></text>
+    <text class="cls-5" transform="translate(50.23 283.22) rotate(-90)"><tspan x="0" y="0">43</tspan></text>
+    <text class="cls-5" transform="translate(50.23 436.84) rotate(-90)"><tspan x="0" y="0">59</tspan></text>
+    <text class="cls-5" transform="translate(50.23 626.76) rotate(-90)"><tspan x="0" y="0">69</tspan></text>
+    <text class="cls-5" transform="translate(123.01 60.8)"><tspan x="0" y="0">50</tspan></text>
+    <text class="cls-5" transform="translate(208.08 505.21)"><tspan x="0" y="0">10</tspan></text>
+    <text class="cls-5" transform="translate(131.84 677.81) rotate(-90)"><tspan x="0" y="0">33</tspan></text>
+    <text class="cls-5" transform="translate(131.84 581.27) rotate(-90)"><tspan x="0" y="0">29</tspan></text>
+    <text class="cls-5" transform="translate(131.84 436.84) rotate(-90)"><tspan x="0" y="0">59</tspan></text>
+    <text class="cls-5" transform="translate(131.84 283.22) rotate(-90)"><tspan x="0" y="0">43</tspan></text>
+    <text class="cls-5" transform="translate(131.84 158.95) rotate(-90)"><tspan x="0" y="0">39</tspan></text>
+  </g>
+  <g id="Calque_05" data-name="Calque 05">
+    <line class="cls-3" x1="202.65" y1="214" x2="202.65" y2="335.93"/>
+  </g>
+  <g id="Calque_03" data-name="Calque 03">
+    <polygon class="cls-2" points="227.48 523.1 227.48 516.84 224.08 516.84 224.08 715.9 224.08 719.42 227.48 719.42 227.48 523.1"/>
+    <polygon class="cls-2" points="199.12 84.09 199.12 80.15 195.72 80.15 195.72 205.49 195.72 209.22 199.12 209.22 199.12 84.09"/>
+  </g>
+</svg>

@@ -1,0 +1,56 @@
+{% extends "layouts/base.html.twig" %}
+
+{% block title %}Page Architecture{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }} {# On inclut les fichiers JS de la page parente #}
+    {{ importmap('architecture') }}
+{% endblock %}
+
+{% block body %}
+<div class="card-container">
+    <!-- Tarjeta TUDEILS -->
+    <div class="card card-tudeils">
+        <img src="{{ asset('upload/architecture/archi1.jpg') }}" alt="Tudeils">
+        <h3 class="card-title">TUDEILS</h3>
+    </div>
+
+    <!-- Tarjeta CHUELLES -->
+    <div class="card card-chuelles">
+        <img src="{{ asset('upload/architecture/archi2.jpg') }}" alt="Chuelles">
+        <h3 class="card-title">CHUELLES</h3>
+    </div>
+
+    <!-- Tarjeta LYON -->
+    <div class="card card-lyon">
+        <img src="{{ asset('upload/architecture/archi3.jpg') }}" alt="Lyon">
+        <h3 class="card-title">LYON</h3>
+    </div>
+
+    <!-- Tarjeta GENTILLY -->
+    <div class="card card-gentilly">
+        <a href="{{ path('projetgentilly') }}">
+            <img src="{{ asset('upload/architecture/archi4.jpg') }}" alt="Gentilly">
+            <h3 class="card-title">GENTILLY</h3>
+        </a>
+    </div>
+
+    <!-- Tarjeta BOURSAULT -->
+    <div class="card card-boursault">
+        <a href="{{ path('projectBoursault') }}">
+            <img src="{{ asset('upload/architecture/archi5.jpg') }}" alt="Boursault">
+            <h3 class="card-title">BOURSAULT</h3>
+        </a>
+    </div>
+
+    <!-- Tarjeta SCEAUX -->
+    <div class="card card-sceaux">
+        <a href="{{ path('projectsceaux') }}">
+            <img src="{{ asset('upload/architecture/archi6.jpg') }}" alt="Sceaux">
+            <h3 class="card-title">SCEAUX</h3>
+        </a>
+    </div>
+</div>
+
+
+{% endblock %}

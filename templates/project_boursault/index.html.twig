@@ -1,0 +1,70 @@
+{% extends "layouts/base.html.twig" %}
+
+{% block title %}Projet Boursault{% endblock %}
+
+{% block body %}
+    <section id="boursault">
+        <div class="plans">
+            <img src="{{ asset('upload/boursault/svg/planboursault1.svg') }}" alt="plan-proyect1" data-large-src="{{ asset('upload/boursault/svg/planboursault1.svg') }}">
+            <img src="{{ asset('upload/boursault/svg/planboursault2.svg') }}" alt="plan-proyect2" data-large-src="{{ asset('upload/boursault/svg/planboursault2.svg') }}">
+        </div>
+
+        <div id="plans-modal" class="plans-modal">
+            <span class="close">&times;</span>
+            <img class="plans-content" id="plans-image" src="">
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+        </div>
+
+        <div class="text-container">
+            <h1>BOURSAULT</h1>
+            <P><span class="label">Programme :</span> Rénovation d’un appartement</P>
+            <P><span class="label">Localisation :</span> Paris XVII</P>
+            <P><span class="label">Surface :</span> 60 m²</P>
+            <P><span class="label">Budget :</span> NC</P>
+            <P><span class="label">Statut :</span> Livré en janvier 2023</P>
+            <P> Lorem ipsum dolor sit amet, magna aliquam erat volutpat. Ut volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation magna aliquam erat volutpat. Ut volutpat. magna aliquam erat volutpat. Ut volutpat. magna aliquam erat volutpat. Ut volutpat.magna aliquam erat volutpat. Ut volutpat. magna aliquam erat volutpat. Ut volutpat. ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat magna aliquam erat volutpat. Ut volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo conseqa.</P>
+        </div>
+    </section>
+    <div class="full_plan">
+            <img src="{{ asset('/upload/wireframe1.png') }}" alt="wireframe1">
+            <img src="{{ asset('/upload/wireframe2.png') }}" alt="wireframe2">
+            <img src="{{ asset('/upload/wireframe3.png') }}" alt="wireframe3">
+    </div>
+    <section id="photos_boursault">
+        <p>C'est...</p>
+        <!-- Galería de fotos -->
+        <div class="photos">
+            <img src="{{ asset('upload/boursault/photo1.jpg') }}" alt="photo-2">
+            <img src="{{ asset('upload/boursault/photo2.jpeg') }}" alt="photo-5">
+            <img src="{{ asset('upload/boursault/photo3.jpg') }}" alt="photo-3">
+            <img src="{{ asset('upload/boursault/photo4.jpg') }}" alt="photo-1">
+            <img src="{{ asset('upload/boursault/photo5.jpg') }}" alt="photo-6">        
+            <img src="{{ asset('upload/boursault/photo6.jpg') }}" alt="photo-4"> 
+        </div>
+
+        <!-- Modal para la galería de fotos -->
+        <div id="photos-modal" class="photos-modal">
+            <span class="close">&times;</span>
+            <img class="photos-content" id="photos-image" src="">
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+        </div>
+        <p>C'était…</p>
+        <div class="bwpictures">
+            <img src="{{ asset('upload/boursault/bw1.jpeg') }}" alt="photo-2">
+            <img src="{{ asset('upload/boursault/bw2.jpeg') }}" alt="photo-5">
+            <img src="{{ asset('upload/boursault/bw3.jpeg') }}" alt="photo-3">
+            <img src="{{ asset('upload/boursault/bw4.jpeg') }}" alt="photo-1">
+            <img src="{{ asset('upload/boursault/bw5.jpeg') }}" alt="photo-6">        
+            <img src="{{ asset('upload/boursault/bw6.jpeg') }}" alt="photo-4"> 
+        </div>
+        <!-- Modal para la galería de bwpictures -->
+        <div id="bwpictures-modal" class="bwpictures-modal">
+            <span class="close">&times;</span>
+            <img class="bwpictures-content" id="bwpictures-image" src="">
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+        </div>
+    </section>
+{% endblock %}
