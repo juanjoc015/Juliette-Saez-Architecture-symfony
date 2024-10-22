@@ -1,3 +1,8 @@
 @import "_reset.scss";
 @import "components/header.scss";
+@import "components/footer.scss";
 @import "components/modal-pictures.scss";
+
+body {
+    height: calc(100vh - 200px);
+}
