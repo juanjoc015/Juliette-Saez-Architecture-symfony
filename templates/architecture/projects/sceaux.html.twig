@@ -1,0 +1,45 @@
+{% extends "layouts/base_architecture.html.twig" %}
+
+{% block title %}Projet Sceaux{% endblock %}
+
+{% block plans %}
+    <img src="{{ asset('upload/sceaux/svg/plansceaux1.svg') }}" alt="plan-proyect1" data-large-src="{{ asset('upload/sceaux/svg/plansceaux1.svg') }}">
+    <img src="{{ asset('upload/sceaux/svg/plansceaux2.svg') }}" alt="plan-proyect2" data-large-src="{{ asset('upload/sceaux/svg/plansceaux2.svg') }}">
+{% endblock %}
+
+{% block project_title %}
+    SCEAUX
+{% endblock %}
+{% block project_programme %}
+    Rénovation d’un appartement
+{% endblock %}
+{% block project_localization %}
+    Paris XVII
+{% endblock %}
+{% block project_surface %}
+    60 m²
+{% endblock %}
+{% block project_budget %}
+    NC
+{% endblock %}
+{% block project_status %}
+    Livré en janvier 2023
+{% endblock %}
+{% block project_description %}
+    Lorem ipsum dolor sit amet, magna aliquam erat volutpat. Ut volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation magna aliquam erat volutpat. Ut volutpat. magna aliquam erat volutpat. Ut volutpat. magna aliquam erat volutpat. Ut volutpat.magna aliquam erat volutpat. Ut volutpat. magna aliquam erat volutpat. Ut volutpat. ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat magna aliquam erat volutpat. Ut volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo conseqa.
+{% endblock %}
+
+{% block present %}
+    <img src="{{ asset('upload/sceaux/sceaux1.jpg') | imagine_filter('images_proyect_boursault')  }}" alt="sceaux-2">
+    <img src="{{ asset('upload/sceaux/sceaux2.jpg') | imagine_filter('images_proyect_boursault')  }}" alt="sceaux-5">
+    <img src="{{ asset('upload/sceaux/sceaux3.jpg') | imagine_filter('images_proyect_boursault')  }}" alt="sceaux-3">
+    <img src="{{ asset('upload/sceaux/sceaux4.jpg') | imagine_filter('images_proyect_boursault')  }}" alt="sceaux-1">
+    <img src="{{ asset('upload/sceaux/sceaux5.jpg') | imagine_filter('images_proyect_boursault')  }}" alt="sceaux-6">        
+    <img src="{{ asset('upload/sceaux/sceaux6.jpg') | imagine_filter('images_proyect_boursault')  }}" alt="sceaux-4">
+{% endblock %}
+
+{% block before %}
+    <img src="{{ asset('upload/sceaux/bw1.jpg') }}" alt="sceaux-2">
+    <img src="{{ asset('upload/sceaux/bw2.jpg') }}" alt="sceaux-5">
+    <img src="{{ asset('upload/sceaux/bw3.jpg') }}" alt="sceaux-3">
+{% endblock %}

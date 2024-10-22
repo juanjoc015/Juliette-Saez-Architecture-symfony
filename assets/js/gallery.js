@@ -20,19 +20,16 @@ function initGallery() {
         clearTimeout(autoScrollTimeout);
         autoScrollTimeout = setTimeout(() => {
             isAutoScrolling = true;
-            console.log("Auto-scroll reactivado");
         }, 2000); // Espera 1 segundo antes de reactivar el auto-scroll
     }
 
     rightArrow.addEventListener('click', () => {
-        console.log("Haciendo clic en la flecha derecha");
         scrollAmount = moveRight(gallery, scrollAmount, scrollPerClick);
         isAutoScrolling = false;
         resetAutoScroll();
     });
 
     leftArrow.addEventListener('click', () => {
-        console.log("Haciendo clic en la flecha izquierda");
         scrollAmount = moveLeft(gallery, scrollAmount, scrollPerClick);
         isAutoScrolling = false;
         resetAutoScroll();

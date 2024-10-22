@@ -1,6 +1,12 @@
 {% extends "layouts/base.html.twig" %}
 
 {% block title %}Projet Sareeslight{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ importmap('design') }}
+{% endblock %}
+
 {% block body %}
 <section id="sareeslight">
     <div class="row1-sareeslight">

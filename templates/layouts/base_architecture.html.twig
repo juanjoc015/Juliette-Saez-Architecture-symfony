@@ -1,0 +1,38 @@
+{% extends "layouts/base.html.twig" %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ importmap('architecture') }}
+{% endblock %}
+
+{% block body %}
+    <section id="section1">
+        <div class="plans"> 
+            {% block plans %}{% endblock %}
+        </div>
+
+        <div class="text-container">
+            <h1>{% block project_title %}{% endblock %}</h1>
+            <p><span class="label">Programme :</span> {% block project_programme %}{% endblock %}</p>
+            <p><span class="label">Localisation :</span> {% block project_localization %}{% endblock %}</p>
+            <p><span class="label">Surface :</span> {% block project_surface %}{% endblock %}</p>
+            <p><span class="label">Budget :</span> {% block project_budget %}{% endblock %}</p>
+            <p><span class="label">Statut :</span> {% block project_status %}{% endblock %}</p>
+            <p>
+                {% block project_description %}{% endblock %}
+            </p>
+        </div>
+    </section>
+
+    <section id="section2">
+        <p>C'est...</p>
+        <div class="photos">
+            {% block present %}{% endblock %}
+        </div>
+
+        <p>C'était…</p>
+        <div class="bwpictures">
+            {% block before %}{% endblock %}
+        </div>
+    </section>
+{% endblock %}

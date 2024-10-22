@@ -1,6 +1,12 @@
 {% extends "layouts/base.html.twig" %}
 
 {% block title %}Page Bureau I{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ importmap('design') }}
+{% endblock %}
+
 {% block body %}
 <section id="afppcd">
     <div class="row1">
