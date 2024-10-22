@@ -1,9 +1,6 @@
 // Archivo: gentilly-modal.js
 
 function initModalGallery(gallerySelector, modalId, modalImageId) {
-    console.log(`initModalGallery se ha ejecutado para ${gallerySelector}`);
-
-    // Obtener elementos
     const modal = document.getElementById(modalId);
 
     if (!modal) {
