@@ -2,9 +2,9 @@
 .gallery-container {
     position: relative;
     width: 90%;
+    height: 100%;
     overflow: hidden;
     margin: 0 auto;
-    margin-top: 20px;
 }
 
 /* Contenedor de la galería */
@@ -21,8 +21,8 @@
 
 /* Estilos de las imágenes */
 .gallery img {
-    width: 350px;
-    height: 700px;
+    max-width: 350px;
+    height: 100%;
     margin: 0 10px;
     transition: transform 0.3s ease;
 }

@@ -1,18 +1,25 @@
 <header class="header">
-    <nav id="navbar">
+    <div class="logo-header">
+        <a href="{{ path('home') }}">
+            <img src="{{ asset('img/logo.png') }}" alt="Logo site Juliette">
+        </a>
+    </div>
 
-        <div class="logo-header">
-            <a href="{{ path('home') }}">
-                <img src="{{ asset('img/logo.png') }}" alt="Logo site Juliette">
-            </a>
-        </div>
-        
+    <nav>
         <ul>
-            <li><a href="{{  path('architecture') }}">Architecture</a></li>
-            <li><a href="{{ path('design') }}">Design</a></li>
-            <li><a href="{{ path('illustration') }}">Illustration</a></li>
-            <li class="link-contact"><a href="#">Contact</a></li>
+            <li>
+                <a href="{{ path('architecture') }}" class="nav-item">Architecture</a>
+            </li>
+            <li>
+                <a href="{{ path('design') }}" class="nav-item">Design</a>
+            </li>
+            <li>
+                <a href="{{ path('illustration') }}" class="nav-item">Illustration</a>
+            </li>
         </ul>
-        
     </nav>
+
+    <div class="actions">
+        <a href="#">Contact</a>
+    </div>
 </header>

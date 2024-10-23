@@ -24,6 +24,10 @@
 
         {% block body %}{% endblock %}
 
+        {% block footer %}
+            {% include 'layouts/partials/_footer.html.twig' %}
+        {% endblock %}
+
         {% include "components/modal.html.twig" %}
     </body>
 </html>
