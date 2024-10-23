@@ -1,33 +1,49 @@
-export default class ModalPictures {
-    constructor() {
-        const modalList = document.querySelectorAll('.modal-pictures');
+document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('modal-pictures');
+    const modalImg = document.getElementById('modalImage');
+    const closeBtn = document.querySelector('.close');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    let currentIndex = 0;
+    let images = [];
 
-        modalList.forEach(modal => {
-            modal.addEventListener('shown.modal', this.loadContent);
-            modal.addEventListener('hidden.modal', this.removeContent);
+    document.querySelectorAll('img').forEach(img => {
+        img.addEventListener('click', (event) => {
+            const parent = event.target.closest('[data-modal="pictures"]');
+            if (parent) {
+                images = Array.from(parent.querySelectorAll('img'));
+                currentIndex = images.indexOf(event.target);
+                openModal(currentIndex);
+            }
         });
+    });
+
+    function openModal(index) {
+        modal.style.display = 'block';
+        modalImg.src = images[index].src;
     }
 
-    loadContent = (event) => {
-        event.preventDefault();
+    function closeModal() {
+        modal.style.display = 'none';
+    }
 
-        let modal = event.currentTarget;
-        let linkElement = event.relatedTarget;
-        let size = linkElement.getAttribute('data-modal-size') || 'md';
-        let url = linkElement.getAttribute('href');
+    function showPrevImage() {
+        currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+        modalImg.src = images[currentIndex].src;
+    }
 
-    };
+    function showNextImage() {
+        currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+        modalImg.src = images[currentIndex].src;
+    }
 
-    removeContent = (event) => {
-        let modal = event.currentTarget;
-        modal.querySelector('.modal-pictures-content').innerHTML = "";
-    };
-};
+    closeBtn.addEventListener('click', closeModal);
+    prevBtn.addEventListener('click', showPrevImage);
+    nextBtn.addEventListener('click', showNextImage);
 
-const showEvent = new CustomEvent('shown.modal', {
-    detail: { modal, linkElement, size, url }
-});
-
-const hideEvent = new CustomEvent('hidden.modal', {
-    detail: { modal }
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
 });
