@@ -20,8 +20,38 @@ liip_imagine:
           thumbnail:
             size: [350, 700]
             mode: outbound
-      
-      images_proyect_boursault:
+
+      images_architecture_picture:
+        cache: default
+        quality: 100
+        filters:
+          auto_rotate: ~
+          strip: ~
+          thumbnail:
+            size: [400, 500]
+            mode: outbound
+
+      images_design_texture:
+        cache: default
+        quality: 100
+        filters:
+          auto_rotate: ~
+          strip: ~
+          thumbnail:
+            size: [100, 100]
+            mode: outbound
+
+      images_design_plan:
+        cache: default
+        quality: 100
+        filters:
+          auto_rotate: ~
+          strip: ~
+          thumbnail:
+            size: [400, 500]
+            mode: outbound
+
+      images_design_picture:
         cache: default
         quality: 100
         filters:

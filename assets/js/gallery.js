@@ -60,4 +60,4 @@ function initGallery() {
 }
 
 // Usar 'turbo:load' para inicializar con Turbo
-document.addEventListener('turbo:load', initGallery);
+document.addEventListener('DOMContentLoaded', initGallery);

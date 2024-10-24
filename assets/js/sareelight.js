@@ -1,6 +1,6 @@
 // Archivo: sareelight-modal.js
 
-document.addEventListener('turbo:load', function() {
+document.addEventListener('DOMContentLoaded', function() {
 
     // Función general para inicializar un modal
     function initModal({

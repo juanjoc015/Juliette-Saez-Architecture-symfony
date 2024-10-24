@@ -1,0 +1,138 @@
+.design {
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+  font-family: 'avenir', sans-serif;
+
+  #section1 {
+      display: flex;
+      justify-content: space-around;
+
+      .plans {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 2rem;
+
+          img {
+            width: 500px;
+            height: 500px;
+            object-fit: contain;
+            cursor: pointer;
+          }
+      }
+
+      .text-container {
+          max-width: 280px;
+          text-align: left;
+          border-left: 4px solid #8f8888;
+          padding-left: 25px;
+
+          h1 {
+              font-weight: bold;
+              font-size: 28px;
+              margin-bottom: 15px;
+              margin-left: 15px;
+          }
+
+          p {
+              font-size: 14px;
+              margin-right: 35px;
+              margin-left: 15px;
+              line-height: 16px;
+
+              .label {
+                  font-weight: bold;
+              }
+          }
+
+          p:last-of-type {
+              font-size: 16px;
+              margin-top: 20px;
+          }
+      }
+  }
+
+
+  #section2 {
+      display: flex;
+      flex-direction: column;
+      gap: 15rem;
+
+      p {
+          margin-bottom: 1rem;
+          font-size: 28px;
+          margin-left: 130px;
+      }
+
+      .pictures {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          row-gap: 5rem;
+          justify-content: center;
+          justify-items: center;
+
+          img {
+              width: 400px;
+              height: 500px;
+              object-fit: cover;
+              cursor: pointer;
+          }
+      }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .design {
+      #section1 {
+          .plans {
+              flex-direction: column;
+
+              img {
+                  width: 400px;
+              }
+          }
+
+          .text-container {
+              max-width: 250px;
+          }
+      }
+
+      #section2 {
+          p {
+              margin-left: 100px;
+          }
+
+          .pictures {
+              grid-template-columns: repeat(2, 1fr);
+          }
+      }
+  }
+}
+
+@media screen and (max-width: 758px) {
+  .design {
+      #section1 {
+          .plans {
+              img {
+                  width: 300px;
+              }
+          }
+
+          .text-container {
+              max-width: 200px;
+          }
+      }
+
+      #section2 {
+          p {
+              margin-left: 50px;
+          }
+
+          .pictures {
+              grid-template-columns: repeat(1, 1fr);
+          }
+      }
+  }
+}

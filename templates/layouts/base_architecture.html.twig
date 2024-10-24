@@ -6,6 +6,7 @@
 {% endblock %}
 
 {% block body %}
+<div class="architecture">
     <section id="section1">
         <div class="plans" data-modal="pictures"> 
             {% block plans %}{% endblock %}
@@ -25,14 +26,19 @@
     </section>
 
     <section id="section2">
-        <p>C'est...</p>
-        <div class="photos" data-modal="pictures">
-            {% block present %}{% endblock %}
+        <div>
+            <p>C'est...</p>
+            <div class="pictures" data-modal="pictures">
+                {% block present %}{% endblock %}
+            </div>
         </div>
 
-        <p>C'était…</p>
-        <div class="bwpictures" data-modal="pictures">
-            {% block before %}{% endblock %}
+        <div>
+            <p>C'était…</p>
+            <div class="pictures" data-modal="pictures">
+                {% block before %}{% endblock %}
+            </div>
         </div>
     </section>
+</div>
 {% endblock %}

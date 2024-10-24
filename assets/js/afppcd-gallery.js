@@ -1,6 +1,6 @@
 // Archivo: afppcd-galleries.js
 
-document.addEventListener('turbo:load', function() {
+document.addEventListener('DOMContentLoaded', function() {
     // --- Galería 1: afppcd ---
     (function() {
         // Seleccionar todas las imágenes con clase 'svg-gallery' dentro de '#afppcd'

@@ -85,4 +85,4 @@ function initLightbox() {
 }
 
 // Usar 'turbo:load' para inicializar con Turbo
-document.addEventListener('turbo:load', initLightbox);
+document.addEventListener('DOMContentLoaded', initLightbox);

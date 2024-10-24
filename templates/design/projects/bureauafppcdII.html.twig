@@ -1,0 +1,23 @@
+{% extends "layouts/base_design.html.twig" %}
+
+{% block title %}Projet II{% endblock %}
+
+{% block plans %}
+    <img src="{{ asset('upload/bureauafppcd/svg/bureauafppcd1.svg') }}" alt="photo bureau II">
+    <img src="{{ asset('upload/bureauafppcd/svg/bureauafppcd2.svg') }}" alt="photo bureau II">
+    <img src="{{ asset('upload/bureauafppcd/svg/bureauafppcd3.svg') }}" alt="photo bureau I">
+    <img src="{{ asset('upload/bureauafppcd/testbureau.png')|imagine_filter('images_design_texture') }}" alt="photo bureau II">
+{% endblock %}
+
+{% block project_title %}BUREAU II{% endblock %}
+{% block project_description %}
+    ipisicing sit amet consectetur adipisicingamet consectetur adipisicing Lorem ipsum sit amet consectetur adipisicing elit.. adipisicing dolor sit  sit amet consectetur adipisicing sit amet consectetur Lorem ipsum sit amet consectetur adipisicing adipisicing sit amet consectetur adipisicing sit amet consectetur adipisicing sit amet consectetur Lorem ipsum sit amet consectetur adipisicing adipisicing sit amet consectetur adipisicing sit amet consectetur adipisicingamet consectetur adipisicing Lorem ipsum sit amet consectetur adipisicing elit...
+{% endblock %}
+
+{% block pictures %}
+    <img src="{{ asset('upload/bureauafppcd/bureauII3.jpg')|imagine_filter('images_design_picture') }}" alt="photo-bureauII">
+    <img src="{{ asset('upload/bureauafppcd/bureauII4.jpg')|imagine_filter('images_design_picture') }}" alt="photo-bureauII">
+    <img src="{{ asset('upload/bureauafppcd/bureauII5.jpg')|imagine_filter('images_design_picture') }}" alt="photo-bureauII">
+    <img src="{{ asset('upload/bureauafppcd/bureauII1.jpg')|imagine_filter('images_design_picture') }}" alt="photo-bureauII">
+    <img src="{{ asset('upload/bureauafppcd/bureauII2.jpg')|imagine_filter('images_design_picture') }}" alt="photo-bureauII">
+{% endblock %}
