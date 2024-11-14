@@ -5,3 +5,4 @@ symfonycasts_sass:
     - 'assets/styles/design.scss'
     - 'assets/styles/architecture.scss'
     - 'assets/styles/illustration.scss'
+    - 'assets/styles/pages/design/projects/bureauII.scss'

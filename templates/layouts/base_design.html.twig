@@ -7,28 +7,28 @@
     {{ importmap('design') }}
 {% endblock %}
 
+{% block stylesheets %}{% endblock %}
+
 {% block body %}
 <div class="design">
-    <section id="section1">
+    <section>
         <div class="plans" data-modal="pictures"> 
             {% block plans %}{% endblock %}
         </div>
 
-        <div class="text-container">
-            <h2>{% block project_title %}{% endblock %}</h2>
-            <p> 
-                {% block project_description %}{% endblock %}
-            </p>
-        </div>
-    </section>
-
-    <section id="section2">
-        <div class="pictures" data-modal="pictures">
+        <div class="img-pictures" data-modal="pictures">
             {% block pictures %}{% endblock %}
         </div>
 
         {% block more %}{% endblock %}
     </section>
+
+    <div class="text-container">
+        <h2>{% block project_title %}{% endblock %}</h2>
+        <p> 
+            {% block project_description %}{% endblock %}
+        </p>
+    </div>
 
 </div>
 

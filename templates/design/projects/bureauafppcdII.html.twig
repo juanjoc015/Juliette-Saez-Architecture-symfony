@@ -2,12 +2,20 @@
 
 {% block title %}Projet II{% endblock %}
 
+
+{% block stylesheets %}
+    {{ parent() }}
+
+    <link rel="stylesheet" href="{{ asset('styles/pages/design/projects/bureauII.scss') }}">
+{% endblock %}
+
 {% block plans %}
-    <img src="{{ asset('upload/bureauafppcd/svg/bureauafppcd1.svg') }}" alt="photo bureau II">
-    <img src="{{ asset('upload/bureauafppcd/svg/bureauafppcd2.svg') }}" alt="photo bureau II">
-    <img src="{{ asset('upload/bureauafppcd/svg/bureauafppcd3.svg') }}" alt="photo bureau I">
+    <img src="{{ asset('upload/bureauafppcd/svg/bureauafppcd1-optimized.svg')}}" alt="photo bureau II">
+    <img src="{{ asset('upload/bureauafppcd/svg/bureauafppcd2-optimized.svg')}}" alt="photo bureau II">
+    <img src="{{ asset('upload/bureauafppcd/svg/bureauafppcd3-optimized.svg')}}" alt="photo bureau I">
     <img src="{{ asset('upload/bureauafppcd/testbureau.png')|imagine_filter('images_design_texture') }}" alt="photo bureau II">
 {% endblock %}
+
 
 {% block project_title %}BUREAU II{% endblock %}
 {% block project_description %}

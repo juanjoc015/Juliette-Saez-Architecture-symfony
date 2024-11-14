@@ -28,8 +28,8 @@ liip_imagine:
           auto_rotate: ~
           strip: ~
           thumbnail:
-            size: [400, 500]
-            mode: outbound
+            size: [700, 900]
+            mode: inset
 
       images_design_texture:
         cache: default
@@ -38,8 +38,8 @@ liip_imagine:
           auto_rotate: ~
           strip: ~
           thumbnail:
-            size: [100, 100]
-            mode: outbound
+            size: [250, 500]
+            mode: inset
 
       images_design_plan:
         cache: default
@@ -58,7 +58,17 @@ liip_imagine:
           auto_rotate: ~
           strip: ~
           thumbnail:
-            size: [400, 500]
-            mode: outbound
+            size: [1200, 750]
+            mode: inset
+
+      images_design_cover:
+        cache: default
+        quality: 100
+        filters:
+          auto_rotate: ~
+          strip: ~
+          thumbnail:
+            size: [500, 500] # Tamaño cuadrado para ajustarse al contenedor
+            mode: outbound       # Puedes usar 'inset' para asegurar que se recorte y ajuste bien
 
       cache: ~
