@@ -1,0 +1,29 @@
+.design {
+    margin: 0 3% !important;
+    section .plans {
+        gap: 3rem !important;
+        
+        :nth-child(1) {
+            width: 1180px;         // Ocupa todo el ancho del contenedor
+            height: auto;        // Ajusta la altura automáticamente manteniendo la proporción
+        }
+        :nth-child(2) {
+            width: 220px;
+            height: auto;
+            
+        }
+
+        :nth-child(3) {
+            margin-top: 4rem;
+            width: 1180px;         // Ocupa todo el ancho del contenedor
+            height: auto;        // Ajusta la altura automáticamente manteniendo la proporción
+        }
+
+        :nth-child(4) {
+            margin-left: 1rem;
+            width: 200px;
+            object-fit: contain;
+        }
+
+    }
+}

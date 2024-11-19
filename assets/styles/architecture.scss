@@ -18,6 +18,7 @@
 
     img {
         width: 100%;
+        cursor: pointer;
         height: 100%;
         object-fit: cover; // Asegura que las imágenes cubran todo el contenedor sin distorsión
     }
@@ -26,8 +27,9 @@
         position: absolute;
         bottom: 5px;
         left: 5px;
-        font-size: 32px;
-        color: rgba(0, 0, 0, 1);
+        font-size: 26px;
+        // color blanco con opacidad
+        color: rgba(255, 255, 255, 0.9);
         padding: 3px 5px;
     }
 }

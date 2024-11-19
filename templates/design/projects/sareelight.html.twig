@@ -2,11 +2,27 @@
 
 {% block title %}Projet Sareeslight{% endblock %}
 
+{% block stylesheets %}
+    {{ parent() }}
+
+    <link rel="stylesheet" href="{{ asset('styles/pages/design/projects/sareeslight.scss') }}">
+{% endblock %}
+
 {% block plans %}
-    <img src="{{ asset('upload/sareelight/svg/sareeslight1.svg') }}" alt="photo bureau I">
-    <img src="{{ asset('upload/sareelight/svg/sareeslight2.svg') }}" alt="photo bureau I">
-    <img src="{{ asset('upload/sareelight/svg/sareeslight3.svg') }}" alt="photo bureau I">
-    <img src="{{ asset('upload/sareelight/svg/sareeslight4.svg') }}" alt="photo bureau I">
+    <div class="mesures-sareelight">
+        <img src="{{ asset('upload/sareelight/svg/sareeslight1-optimized.svg') }}" alt="photo bureau I">
+        <img src="{{ asset('upload/sareelight/svg/sareeslight2-optimized.svg') }}" alt="photo bureau I">
+        <img src="{{ asset('upload/sareelight/svg/sareeslight3-optimized.svg') }}" alt="photo bureau I">
+        <img src="{{ asset('upload/sareelight/svg/sareeslight4-optimized.svg') }}" alt="photo bureau I">
+    </div>
+    <div class="isometric-sareelight">
+        <img src="{{ asset('upload/sareelight/svg/couleur-1-optimized.svg') }}" alt="">
+        <img src="{{ asset('upload/sareelight/svg/couleur-2-optimized.svg') }}" alt="">
+        <img src="{{ asset('upload/sareelight/svg/couleur-3-optimized.svg') }}" alt="">
+        <img src="{{ asset('upload/sareelight/svg/couleur-4-optimized.svg') }}" alt="">
+        <img src="{{ asset('upload/sareelight/svg/couleur-5-optimized.svg') }}" alt="">
+        <img src="{{ asset('upload/sareelight/svg/couleur-6-optimized.svg') }}" alt="">
+    </div>
 {% endblock %}
 
 {% block project_title %}SAREE LIGHT{% endblock %}
@@ -15,15 +31,6 @@
 {% endblock %}
 
 {% block pictures %}
-    <img src="{{ asset('upload/sareelight/svg/couleur-1.svg') }}" alt="">
-    <img src="{{ asset('upload/sareelight/svg/couleur-2.svg') }}" alt="">
-    <img src="{{ asset('upload/sareelight/svg/couleur-3.svg') }}" alt="">
-    <img src="{{ asset('upload/sareelight/svg/couleur-4.svg') }}" alt="">
-    <img src="{{ asset('upload/sareelight/svg/couleur-5.svg') }}" alt="">
-    <img src="{{ asset('upload/sareelight/svg/couleur-6.svg') }}" alt="">
-{% endblock %}
-
-{% block more %}
     <div class="pictures" data-modal="pictures">
         <img src="{{ asset('upload/sareelight/sareeslight.jpg')|imagine_filter('images_design_picture') }}" alt="" width="300">
     </div>
