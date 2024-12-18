@@ -1,0 +1,45 @@
+{% extends "layouts/base.html.twig" %}
+
+{% block title %}Projet Chuelles{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('styles/pages/architecture/projects/chuelles.scss') }}">
+{% endblock %}
+
+{% block body %}
+    <div id="page-chuelles">
+        <section id="section1">
+            <div class="plans" data-modal="pictures"> 
+                <img src="{{ asset('upload/architecture/chuelles/svg/plan_existant1-optimized.svg') }}" alt="">
+                <img src="{{ asset('upload/architecture/chuelles/svg/plan_projet2-optimized.svg') }}" alt="">
+                <img src="{{ asset('upload/architecture/chuelles/svg/coupes3-optimized.svg') }}" alt="">
+                <img src="{{ asset('upload/architecture/chuelles/svg/elevation4-optimized.svg') }}" alt="">
+            </div>
+
+
+            <div class="text-container">
+                    <h1>CHUELLES</h1>
+                    <p><span class="label">Programme :</span> Rénovation d’un appartement</p>
+                    <p><span class="label">Localisation :</span> Paris XVII</p>
+                    <p><span class="label">Surface :</span> 60 m²</p>
+                    <p><span class="label">Budget :</span> NC</p>
+                    <p><span class="label">Statut :</span> Livré en janvier 2023</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, magna aliquam erat volutpat. Ut volutpat. ipsum dolor sit amet, magna aliquam erat ipsum dolor sit amet, magna aliquam erat Lorem ipsum dolor sit amet, magna aliquam erat volutpat. Ut volutpat. ipsum dolor sit amet, magna aliquam erat Lorem ipsum dolor sit amet, magna aliquam erat volutpat. Ut ipsum dolor sit amet, magna aliquam erat volutpat. ipsum dolor sit amet, magna aliquam erat Lorem ipsum dolor sit amet, magna aliquam erat volutpat. Ut volutpat.Lorem ipsum dolor sit amet, magna aliquam erat volutpat. Ut volutpat.Lorem ipsum dolor sit amet, magna aliquam erat ipsum dolor sit amet, magna aliquam erat ipsum dolor sit amet, magna aliquam erat  ipsum dolor sit amet, magna aliquam erat volutpat. Ut volutpat.ipsum dolor sit amet, magna aliquam erat ipsum dolor sit amet, magna aliquam erat Lorem ipsum dolor sit amet, magna aliipsum dolor sit amet, magna aliquam erat ipsum dolor sit amet, magna aliquam erat ipsum dolor sit amet, magna aliquam erat ipsum dolor sit amet, magna aliquam erat quam erat volutpat. Ut volutpat...Lorem ipsum dolor sit amet, magna aliquam erat volutpat. Ut volutpat...Lorem ipsum dolor sit amet, magna aliquam erat volutpat. Ut volutpat...Lorem ipsum dolor sit amet, magna aliquam erat volutpat. Ut volutpat...
+                    </p>
+                </div>
+        </section>
+
+        <section id="section2">
+            <div class="pictures" data-modal="pictures">
+                <img src="{{ asset('upload/architecture/tudeils/image1.jpg') }}  " alt="">
+                <img src="{{ asset('upload/architecture/tudeils/image2.jpg') }}  " alt="">
+                <img src="{{ asset('upload/architecture/tudeils/image3.jpg') }}  " alt="">
+                <img src="{{ asset('upload/architecture/tudeils/image4.jpg') }}  " alt="">
+                <img src="{{ asset('upload/architecture/tudeils/image5.jpg') }}  " alt="">
+                <img src="{{ asset('upload/architecture/tudeils/image6.jpg') }}  " alt="">
+            </div>
+        </section>
+    </div>
+{% endblock %}

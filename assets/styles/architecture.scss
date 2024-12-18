@@ -34,3 +34,32 @@
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .card-container {
+        grid-template-columns: repeat(2, 302px);
+        gap: 90px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .card-container {
+        gap: 70px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .card-container {
+        grid-template-columns: repeat(1, 302px);
+        gap: 100px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .card-container {
+        .card {
+            margin: 0 auto;
+            width: 15rem;
+            height: auto;
+        }
+    }
+}

@@ -1,0 +1,76 @@
+#page-chuelles {
+    margin: 0 4rem;
+    font-family: 'avenir', sans-serif;
+
+    #section1 {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 14rem;
+
+        .plans {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+            img {
+                width: 1000px;
+                object-fit: contain;
+                cursor: pointer;
+            }
+
+            :nth-child(2) {
+                margin-bottom: 50px;
+            }
+        }
+
+        .text-container {
+            max-width: 280px;
+            text-align: left;
+            border-left: 4px solid #8f8888;
+            padding-left: 25px;
+            height: 800px;
+
+            h1 {
+                font-weight: bold;
+                font-size: 28px;
+                margin-bottom: 15px;
+                margin-left: 15px;
+            }
+
+            p {
+                font-size: 14px;
+                margin-right: 35px;
+                margin-left: 15px;
+                line-height: 16px;
+
+                .label {
+                    font-weight: bold;
+                }
+            }
+
+            p:last-of-type {
+                font-size: 16px;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    #section2 {
+        .pictures {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 5rem;
+            justify-content: center;
+            justify-items: center;
+
+            img {
+                width: 500px;
+                height: auto;
+                object-fit: cover;
+                cursor: pointer;
+            }
+        }
+    }
+}

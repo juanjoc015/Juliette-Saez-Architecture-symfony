@@ -34,3 +34,46 @@
         padding: 3px 5px;
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .card-containerdesign {
+        grid-template-columns: repeat(3, 260px);
+        gap: 50px;
+        .card-design {
+            height: 260px;
+        }
+    }
+}
+
+@media screen and (max-width: 985px) {
+    .card-containerdesign {
+        grid-template-columns: repeat(2, 260px);
+        gap: 110px;
+        
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .card-containerdesign {
+        gap: 60px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .card-containerdesign {
+        grid-template-columns: repeat(1, 302px);
+        gap: 100px;
+        .card-design {
+            height: 302px;
+        }
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .card-containerdesign {
+        grid-template-columns: repeat(1, 255px);
+        .card-design {
+            height: 255px;
+        }
+    }
+}

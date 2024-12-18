@@ -21,7 +21,7 @@ class ArchitectureController extends AbstractController
         return $this->render('architecture/projects/boursault.html.twig');
     }
 
-    #[Route('/project/gentilly', name: 'projet_gentilly')]
+    #[Route('/project/gentilly', name: 'project_gentilly')]
     public function gentilly(): Response
     {
         return $this->render('architecture/projects/gentilly.html.twig');
@@ -31,5 +31,23 @@ class ArchitectureController extends AbstractController
     public function sceaux(): Response
     {
         return $this->render('architecture/projects/sceaux.html.twig');
+    }
+
+    #[Route('/project/tudeils', name: 'project_tudeils')]
+    public function tudeils(): Response
+    {
+        return $this->render('architecture/projects/tudeils.html.twig');
+    }
+
+    #[Route('/project/chuelles', name: 'project_chuelles')]
+    public function chuelles(): Response
+    {
+        return $this->render('architecture/projects/chuelles.html.twig');
+    }
+
+    #[Route('/project/lyon', name: 'project_lyon')]
+    public function lyon(): Response
+    {
+        return $this->render('architecture/projects/lyon.html.twig');
     }
 }

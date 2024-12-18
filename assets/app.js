@@ -8,6 +8,11 @@ import './bootstrap.js';
 import './styles/app.scss';
 import './js/components/modal-pictures.js'
 
+import ToggleMenu from './js/components/navbar.js';
+
+// Ejecutar ToggleMenu
+new ToggleMenu();
+
 
 
 

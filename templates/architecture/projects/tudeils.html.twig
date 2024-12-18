@@ -1,0 +1,62 @@
+{% extends "layouts/base.html.twig" %}
+
+{% block title %}Projet Tudeils{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('styles/pages/architecture/projects/tudeils.scss') }}">
+{% endblock %}
+
+{% block body %}
+    <div id="page-tudeils">
+        <section id="section1">
+            <div class="image-tudeils">
+                <img src="{{ asset('upload/architecture/tudeils/tudeils.jpeg')|imagine_filter('image_home_tudeils') }}" alt="plan-proyect1">
+            </div>
+
+            <div class="text-container">
+                    <h1>TUDEILS</h1>
+                    <p><span class="label">Programme :</span> Rénovation d’un appartement</p>
+                    <p><span class="label">Localisation :</span> Paris XVII</p>
+                    <p><span class="label">Surface :</span> 60 m²</p>
+                    <p><span class="label">Budget :</span> NC</p>
+                    <p><span class="label">Statut :</span> Livré en janvier 2023</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, aliquam erat ipsum dolor sit amet, magna aliquam erat volutpat. ipsum dolor sit amet, magna aliquam erat Lorem ipsum dolor sit amet, magna aliquam erat volutpat. Ut volutpat.Lorem ipsum dolor sit amet, magna aliquam erat volutpat. Ut volutpat.Lorem ipsum dolor sit amet, magna aliquam erat ipsum dolor sit amet, magna aliquam erat ipsum dolor sit amet, magna aliquam erat  ipsum dolor sit amet, magna aliquam erat volutpat. Ut volutpat.ipsum dolor sit amet, magna aliquam erat ipsum dolor sit amet, magna aliquam erat Lorem ipsum dolor sit amet, magna aliipsum dolor sit amet, magna aliquam erat ipsum dolor sit amet, magna aliquam erat ipsum dolor sit amet, magna aliquam erat ipsum dolor sit amet, magna aliquam erat quam erat volutpat. Ut volutpat...Lorem ipsum dolor sit amet, magna aliquam erat volutpat. Ut volutpat...Lorem ipsum dolor sit amet, magna aliquam erat volutpat. Ut volutpat...Lorem ipsum dolor sit amet, magna aliquam erat volutpat. Ut volutpat...
+                    </p>
+                </div>
+        </section>
+
+        <section id="section2">
+            <div class="plans" data-modal="pictures"> 
+                <img src="{{ asset('upload/architecture/tudeils/svg/elevation2-optimized.svg') }}" alt="Plan del proyecto Tudeils 2">  
+                <img src="{{ asset('upload/architecture/tudeils/svg/elevation1-optimized.svg') }}" alt="Plan del proyecto Tudeils 1">
+                <img src="{{ asset('upload/architecture/tudeils/svg/planexistant2-optimized.svg') }}" alt="Plan del proyecto Tudeils 4">
+                <img src="{{ asset('upload/architecture/tudeils/svg/planexistant1-optimized.svg') }}" alt="Plan del proyecto Tudeils 3">
+                <img src="{{ asset('upload/architecture/tudeils/svg/planprojet2-optimized.svg') }}" alt="Plan del proyecto Tudeils 6">     
+                <img src="{{ asset('upload/architecture/tudeils/svg/planprojet1-optimized.svg') }}" alt="Plan del proyecto Tudeils 5">
+            </div>
+        </section>
+
+        <section id="section3">
+            <div class="pictures" data-modal="pictures">
+                <img src="{{ asset('upload/architecture/tudeils/image1.jpg') }}  " alt="">
+                <img src="{{ asset('upload/architecture/tudeils/image2.jpg') }}  " alt="">
+                <img src="{{ asset('upload/architecture/tudeils/image3.jpg') }}  " alt="">
+                <img src="{{ asset('upload/architecture/tudeils/image4.jpg') }}  " alt="">
+                <img src="{{ asset('upload/architecture/tudeils/image5.jpg') }}  " alt="">
+                <img src="{{ asset('upload/architecture/tudeils/image6.jpg') }}  " alt="">
+                <img src="{{ asset('upload/architecture/tudeils/image7.jpg') }}  " alt="">
+                <img src="{{ asset('upload/architecture/tudeils/image8.jpg') }}  " alt="">
+                <img src="{{ asset('upload/architecture/tudeils/image9.jpg') }}  " alt="">
+                <img src="{{ asset('upload/architecture/tudeils/image10.jpg') }}  " alt="">
+                <img src="{{ asset('upload/architecture/tudeils/image11.jpg') }}  " alt="">
+                <img src="{{ asset('upload/architecture/tudeils/image12.jpg') }}  " alt="">
+            </div>
+        </section>
+    </div>
+{% endblock %}
+
+
+
+

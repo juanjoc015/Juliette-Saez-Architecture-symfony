@@ -31,6 +31,16 @@ liip_imagine:
             size: [700, 900]
             mode: inset
 
+      image_home_tudeils:
+        cache: default
+        quality: 100
+        filters:
+          auto_rotate: ~
+          strip: ~
+          thumbnail:
+            size: [1024, 730]
+            mode: outbound
+
       images_design_texture:
         cache: default
         quality: 100

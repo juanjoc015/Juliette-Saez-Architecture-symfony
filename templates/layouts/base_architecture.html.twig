@@ -5,12 +5,15 @@
     {{ importmap('architecture') }}
 {% endblock %}
 
+{% block stylesheets %}{% endblock %}
+
 {% block body %}
 <div class="architecture">
     <section id="section1">
         <div class="plans" data-modal="pictures"> 
             {% block plans %}{% endblock %}
         </div>
+
 
         <div class="text-container">
             <h1>{% block project_title %}{% endblock %}</h1>

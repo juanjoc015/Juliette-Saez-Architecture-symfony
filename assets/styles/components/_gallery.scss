@@ -5,54 +5,67 @@
     height: 100%;
     overflow: hidden;
     margin: 0 auto;
+
+    /* Contenedor de la galería */
+    .gallery {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        overflow-x: scroll; /* Permitir el scroll horizontal */
+        scroll-behavior: smooth; /* Hacer el desplazamiento suave */
+
+        &::-webkit-scrollbar {
+            display: none; /* Para navegadores basados en WebKit (Chrome, Safari) */
+        }
+
+        /* Estilos de las imágenes */
+        img {
+            max-width: 350px;
+            height: 100%;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    /* Estilos para las flechas */
+    .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 10;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        &.left-arrow {
+            left: 0;
+        }
+
+        &.right-arrow {
+            right: 0;
+        }
+    }
 }
 
-/* Contenedor de la galería */
-.gallery {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    overflow-x: scroll; /* Permitir el scroll horizontal */
-    scroll-behavior: smooth; /* Hacer el desplazamiento suave */
-}
-
-.gallery::-webkit-scrollbar {
-    display: none; /* Para navegadores basados en WebKit (Chrome, Safari) */
-}
-
-/* Estilos de las imágenes */
-.gallery img {
-    max-width: 350px;
-    height: 100%;
-    margin: 0 10px;
-    transition: transform 0.3s ease;
-}
-
-/* Efecto hover para agrandar las imágenes */
-.gallery img:hover {
-    transform: scale(1.1);
-}
-
-/* Estilos para las flechas */
-.arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
-}
-
-.left-arrow {
-    left: 0;
-}
-
-.right-arrow {
-    right: 0;
-}
-
-.arrow:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+/* Media Query */
+@media screen and (max-width: 480px) {
+    .gallery-container {
+        .gallery {
+            img {
+                max-width: 300px;
+                height: 100%;
+                margin: 0 10px;
+                transition: transform 0.3s ease;
+            }
+        }
+    }
 }
