@@ -2,10 +2,23 @@
 
 {% block title %}Projet Gentilly{% endblock %}
 
-{% block plans %}
-    <img src="{{ asset('upload/architecture/gentilly/svg/plansgentilly1-optimized.svg') }}" alt="Plan del proyecto Gentilly 1">
-    <img src="{{ asset('upload/architecture/gentilly/svg/plansgentilly2-optimized.svg') }}" alt="Plan del proyecto Gentilly 2">
+{% block imgmobile %}
+    <div class="img-mobile">
+        <img src="{{ asset('upload/architecture/boursault/photo1.jpg')|imagine_filter('images_architecture_picture') }}" alt="photo-2">
+    </div>
 {% endblock %}
+
+{% block plans %}
+    <div class="plan-container">
+        <img src="{{ asset('upload/architecture/gentilly/svg/plansgentilly1-optimized.svg') }}" alt="Plan del proyecto Gentilly 1">
+        <p>Avant</p>
+    </div>
+    <div class="plan-container">
+        <img src="{{ asset('upload/architecture/gentilly/svg/plansgentilly2-optimized.svg') }}" alt="Plan del proyecto Gentilly 2">
+        <p>Aprés</p>
+    </div>
+{% endblock %}
+
 
 {% block project_title %}
     GENTILLY
@@ -14,7 +27,7 @@
     Rénovation d’un appartement
 {% endblock %}
 {% block project_localization %}
-    Paris XVII
+    Paris XIV
 {% endblock %}
 {% block project_surface %}
     60 m²
@@ -26,7 +39,7 @@
     Livré en janvier 2023
 {% endblock %}
 {% block project_description %}
-    Lorem ipsum dolor sit amet, magna aliquam erat volutpat. Ut volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation magna aliquam erat volutpat. Ut volutpat. magna aliquam erat volutpat. Ut volutpat. magna aliquam erat volutpat. Ut volutpat.magna aliquam erat volutpat. Ut volutpat. magna aliquam erat volutpat. Ut volutpat. ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat magna aliquam erat volutpat. Ut volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo conseqa.
+    Ce projet réinvente l’agencement intérieur. L’ouverture de la cuisine sur le salon permet de créer une vaste pièce à vivre baignée de lumière. Une reprise complète du réseau électrique accompagne cette transformation garantissant la mise aux normes, la sécurité et l’optimisation des points lumineux et prises de courant. La salle de bain, quant à elle, fait l’objet d’une rénovation complète, avec un meuble vasque sur-mesure. 
 {% endblock %}
 
 {% block present %}

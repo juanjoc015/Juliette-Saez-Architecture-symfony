@@ -32,6 +32,10 @@ return [
         'path' => './assets/illustration.js',
         'entrypoint' => true,
     ],
+    'contact' => [
+        'path' => './assets/contact.js',
+        'entrypoint' => true,
+    ],
     '@hotwired/stimulus' => [
         'version' => '3.2.2',
     ],

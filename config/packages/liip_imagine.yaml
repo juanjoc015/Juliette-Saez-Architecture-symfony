@@ -18,7 +18,7 @@ liip_imagine:
           auto_rotate: ~
           strip: ~
           thumbnail:
-            size: [350, 800]
+            size: [450, 930]
             mode: outbound
 
       images_architecture_picture:
@@ -29,7 +29,7 @@ liip_imagine:
           strip: ~
           thumbnail:
             size: [700, 900]
-            mode: inset
+            mode: outbound
 
       image_home_tudeils:
         cache: default

@@ -17,24 +17,23 @@
         }
 
         .text-container {
-            max-width: 280px;
+            width: 400px;
             text-align: left;
             border-left: 4px solid #8f8888;
             padding-left: 25px;
-            height: 725px;
+            height: auto;
 
             h1 {
                 font-weight: bold;
                 font-size: 28px;
                 margin-bottom: 15px;
-                margin-left: 15px;
             }
 
             p {
+                color: #444;
                 font-size: 14px;
                 margin-right: 35px;
-                margin-left: 15px;
-                line-height: 16px;
+                line-height: 21px;
 
                 .label {
                     font-weight: bold;
@@ -55,10 +54,24 @@
             grid-template-columns: repeat(2, 1fr);
             gap: 4rem;
             cursor: pointer;
-            img {
-                max-width: 667px;
-                margin: 0 auto;
+
+            .svg-tudeils {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+                img {
+                    width: 667px;
+  
+                }
+                p{margin: 0 4rem;
+                    font-style: italic;
+                    color: #8f8888;
+                    margin-top: 1rem;
+                    width: 667px;
+                }
             }
+            
            
         }
     
@@ -80,5 +93,160 @@
                 cursor: pointer;
             }
         }
+
+        .bw {
+            margin-top: 15rem;
+        }
     }
 }
+
+
+@media (max-width: 1750px) {
+    #page-tudeils {
+        #section3 {
+            .pictures {
+                column-gap: 2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 1667px) {
+    #page-tudeils {
+        margin: 0 2rem;
+
+        #section1 {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 4rem;
+
+
+            .image-tudeils {
+                margin-bottom: 7rem;
+            }
+
+            .text-container {
+                width: 1024px;
+                border-left: none;
+                height: auto;
+                margin-bottom: 10rem;
+                padding-left: 0;
+
+                h1 {
+                    font-size: 24px;
+                }
+
+                p {
+                    font-size: 14px;
+                    margin-right: 0;
+                    margin-left: 0;
+                }
+
+                p:last-of-type {
+                    font-size: 16px;
+                    margin-top: 3rem;
+                }
+            }
+        }
+
+        #section2 {
+            .plans {
+                grid-template-columns: 1fr;
+                gap: 10rem;
+                .svg-tudeils {
+                    
+                    img {
+                        width: 80%;
+                    }
+                    p {
+                        width: 80%;
+                    }
+                }
+            }
+            
+        }
+
+        #section3 {
+            .pictures {
+                grid-template-columns: repeat(2, 1fr);
+                row-gap: 10rem;
+
+            }
+        }
+    }
+}
+
+@media (max-width: 1164px) {
+    #page-tudeils {
+        margin: 0 2rem;
+        #section1 {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 4rem;
+
+
+            .image-tudeils {
+                display: flex;
+                justify-content: center;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .text-container {
+                width: 98%;
+            }
+        }
+
+        #section2 {
+            .plans {
+                .svg-tudeils {
+                    img {
+                        width: 100%;
+                    }
+                    p {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        #section3 {
+            .pictures {
+                grid-template-columns: repeat(1, 1fr);
+
+            }
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    #page-tudeils {
+        #section1 {
+            .text-container {
+                p:last-of-type {
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 561px) {
+    #page-tudeils {
+        margin: 0 1rem;
+        #section2 {
+
+        }
+        #section3 {
+            .pictures {
+                row-gap: 3rem;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
