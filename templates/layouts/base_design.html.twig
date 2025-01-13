@@ -10,26 +10,32 @@
 {% block stylesheets %}{% endblock %}
 
 {% block body %}
-<div class="design">
-    <section>
-        <div class="plans" data-modal="pictures"> 
-            {% block plans %}{% endblock %}
-        </div>
 
+<div class="design">
+{% block imgmobile %}{% endblock %}
+    <section>
+        <div id="section1">
+            <div class="plans" data-modal="pictures"> 
+                {% block plans %}{% endblock %}
+            </div>
+
+            <div>
+                <div class="text-container">
+                    <h1>{% block project_title %}{% endblock %}</h1>
+                    <p> 
+                        {% block project_description %}{% endblock %}
+                    </p>
+                </div>
+            </div>
+        </div>
+        
         <div class="img-pictures" data-modal="pictures">
             {% block pictures %}{% endblock %}
         </div>
 
         {% block more %}{% endblock %}
+      
     </section>
-
-    <div class="text-container">
-        <h1>{% block project_title %}{% endblock %}</h1>
-        <p> 
-            {% block project_description %}{% endblock %}
-        </p>
-    </div>
-
 </div>
 
 {% endblock %}

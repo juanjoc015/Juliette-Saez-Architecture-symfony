@@ -14,12 +14,22 @@
             align-items: center;
             flex-wrap: wrap;
             gap: 9rem;
+            width: 100%;
 
-            img {
-                width: 1000px;
-                object-fit: contain;
-                cursor: pointer;
+            .plan-container {
+                
+                img {
+                    width: 1000px;
+                    object-fit: contain;
+                    cursor: pointer;
+                }
+                p {
+                    font-style: italic;
+                    color: #8f8888;
+                    margin-left: 4rem;
+                }
             }
+
 
             :nth-child(2) {
                 margin-bottom: 50px;
@@ -27,11 +37,11 @@
         }
 
         .text-container {
-            max-width: 280px;
+            width: 280px;
             text-align: left;
             border-left: 4px solid #8f8888;
             padding-left: 25px;
-            height: 690px;
+            height: auto;
 
             h1 {
                 font-weight: bold;
@@ -44,7 +54,8 @@
                 font-size: 14px;
                 margin-right: 35px;
                 margin-left: 15px;
-                line-height: 16px;
+                line-height: 19px;
+                color: #444;
 
                 .label {
                     font-weight: bold;
@@ -52,7 +63,7 @@
             }
 
             p:last-of-type {
-                font-size: 16px;
+                font-size: 14px;
                 margin-top: 20px;
             }
         }
@@ -71,6 +82,91 @@
                 height: auto;
                 object-fit: cover;
                 cursor: pointer;
+            }
+        }
+    }
+}
+
+@media (max-width: 1622px) {
+    #page-lyon {
+        #section1 {
+            .plans {
+                .plan-container {
+                    width: 100%;
+                    img {
+                        width: 90%;
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+
+@media (max-width: 1400px) {
+    #page-lyon {
+        #section1 {
+            flex-direction: column;
+            .plans {
+                order: 1;
+            }
+            .text-container {
+                box-sizing: border-box;
+                border-left: none;
+                padding-left: 0;
+                text-align: start;
+                margin: 0 auto;
+                margin-bottom: 6rem;
+                padding: 3rem;
+                width: 90%;
+
+                h1 {
+                    margin: 0;
+                    padding-bottom: 1rem;
+                }
+
+                p {
+                    margin: 0;
+                }
+
+                p:last-of-type {
+                    margin: 0;
+                    margin-top: 3rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    #page-lyon {
+        margin: 0 2rem;
+        #section1 {
+            .plans {
+                .plan-container {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    #page-lyon {
+        margin: 0 1rem;
+        #section1 {
+            .text-container {
+                width: 100%;
+                padding: 1rem;
+                h1 {
+                    font-size: 1.5rem;
+                }
+                p {
+                    font-size: 1rem;
+                }
             }
         }
     }

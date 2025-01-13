@@ -2,9 +2,21 @@
 
 {% block title %}Projet Boursault{% endblock %}
 
+{% block imgmobile %}
+    <div class="img-mobile">
+        <img src="{{ asset('upload/architecture/boursault/photo6.jpg')|imagine_filter('images_architecture_picture') }}" alt="photo-2">
+    </div>
+{% endblock %}
+
 {% block plans %}
-    <img src="{{ asset('upload/architecture/boursault/svg/planboursault1-optimized.svg') }}" alt="plan-proyect1">
-    <img src="{{ asset('upload/architecture/boursault/svg/planboursault2-optimized.svg') }}" alt="plan-proyect2">
+    <div class="plan-container">
+        <img src="{{ asset('upload/architecture/boursault/svg/planboursault1-optimized.svg') }}" alt="plan-proyect1">
+        <p>Avant</p>
+    </div>
+    <div class="plan-container">
+        <img src="{{ asset('upload/architecture/boursault/svg/planboursault2-optimized.svg') }}" alt="plan-proyect2">
+        <p>Aprés</p>
+    </div>
 {% endblock %}
 
 {% block project_title %}
@@ -26,7 +38,7 @@
     Livré en janvier 2023
 {% endblock %}
 {% block project_description %}
-    Lorem ipsum dolor sit amet, magna aliquam erat volutpat. Ut volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation magna aliquam erat volutpat. Ut volutpat. magna aliquam erat volutpat. Ut volutpat. magna aliquam erat volutpat. Ut volutpat.magna aliquam erat volutpat. Ut volutpat. magna aliquam erat volutpat. Ut volutpat. ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat magna aliquam erat volutpat. Ut volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo conseqa.
+    Le cœur de ce projet réside dans l’aménagement de la cuisine, qui occupe désormais la place de l'ancienne salle de bain. Cette réorganisation permet de créer une cuisine ouverte sur le salon, transformant cet espace en un lieu chaleureux et intime. La salle de bain, quant à elle, s’installe dans l’ancienne cuisine. La salle de bain donne accès aux toilettes qui conservent leur emplacement existant. Une douche à l’italienne et un meuble vasque dessiné sur mesure permet d’y intégrer la machine à laver. Ce réaménagement a permis d’intégrer un espace de rangement fonctionnel accessible depuis l’entrée.
 {% endblock %}
 
 {% block present %}

@@ -5,14 +5,14 @@
     height: 100%;
     overflow: hidden;
     margin: 0 auto;
-
+    
     /* Contenedor de la galería */
     .gallery {
         display: flex;
         transition: transform 0.5s ease-in-out;
         overflow-x: scroll; /* Permitir el scroll horizontal */
         scroll-behavior: smooth; /* Hacer el desplazamiento suave */
-
+        
         &::-webkit-scrollbar {
             display: none; /* Para navegadores basados en WebKit (Chrome, Safari) */
         }
@@ -20,12 +20,12 @@
         /* Estilos de las imágenes */
         img {
             max-width: 350px;
-            height: 100%;
+            height: 100vh;
             margin: 0 10px;
             transition: transform 0.3s ease;
 
             &:hover {
-                transform: scale(1.1);
+                transform: scale(1.1); /* Efecto hover para agrandar las imágenes */
             }
         }
     }
@@ -56,15 +56,45 @@
     }
 }
 
-/* Media Query */
-@media screen and (max-width: 480px) {
+
+
+/* Estilos de las imágenes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .gallery-container {
+        width: 100%; /* Asegura que la galería ocupe todo el ancho disponible */
+    
+        .gallery {
+            img {
+                margin: 0 auto; /* Centrar la imagen */
+                max-width: 400px;
+    
+                &:hover {
+                    transform: none; /* Anula el efecto hover */
+                }
+            }
+        }
+    }
+
+    
+}
+
+@media (max-width: 510px) {
     .gallery-container {
         .gallery {
             img {
+                max-width: 100vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .gallery-container {
+        max-width: 300px;
+        .gallery {
+            img {
                 max-width: 300px;
-                height: 100%;
-                margin: 0 10px;
-                transition: transform 0.3s ease;
+                height: 100vh;
             }
         }
     }

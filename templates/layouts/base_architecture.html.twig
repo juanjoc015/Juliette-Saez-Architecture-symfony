@@ -9,11 +9,11 @@
 
 {% block body %}
 <div class="architecture">
+    {% block imgmobile %}{% endblock %}
     <section id="section1">
         <div class="plans" data-modal="pictures"> 
             {% block plans %}{% endblock %}
         </div>
-
 
         <div class="text-container">
             <h1>{% block project_title %}{% endblock %}</h1>
@@ -26,18 +26,17 @@
                 {% block project_description %}{% endblock %}
             </p>
         </div>
+
     </section>
 
     <section id="section2">
         <div>
-            <p>C'est...</p>
             <div class="pictures" data-modal="pictures">
                 {% block present %}{% endblock %}
             </div>
         </div>
 
         <div>
-            <p>C'était…</p>
             <div class="pictures" data-modal="pictures">
                 {% block before %}{% endblock %}
             </div>

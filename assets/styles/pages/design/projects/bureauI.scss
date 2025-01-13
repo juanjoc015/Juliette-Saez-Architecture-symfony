@@ -2,6 +2,7 @@
     margin: 0 3% !important;
     section .plans {
         gap: 3rem !important;
+        justify-content: flex-start !important;
         
         :nth-child(1) {
             width: 1180px;         // Ocupa todo el ancho del contenedor
@@ -20,10 +21,87 @@
         }
 
         :nth-child(4) {
-            margin-left: 1rem;
-            width: 200px;
-            object-fit: contain;
+            margin-top: 4.5rem;
+            margin-left: 2rem;
+            width: 12%;
+            object-fit: cover;
+            height: 400px;
         }
 
+    }
+}
+
+@media screen and (max-width: 1890px) {
+    .design {
+        section {
+            #section1 {
+                .plans {
+
+                    :nth-child(1) {
+                        width: 80%;       
+                    }
+                    :nth-child(2) {
+                        width: 15%;       
+                    }
+                    :nth-child(3) {
+                        width: 80%;       
+                    }  
+                }                 
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1035px) {
+    .design {
+        section {
+            #section1 {
+                .plans {
+
+                    > :nth-child(1) {
+                        width: 98%;       
+                    }
+                    > :nth-child(2) {
+                        width: 19%;
+                    }
+                    > :nth-child(3) {
+                        width: 98%;  
+                        margin-top: 0;   
+                        margin-bottom: 3rem; 
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .design {
+        section {
+            #section1 {
+                .plans {
+                    > :nth-child(2) {
+                        width: 21%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .design {
+        section {
+            #section1 {
+                .plans {
+                    > :nth-child(2) {
+                        width: 24%;
+                    }
+                    > :nth-child(4) {
+                        width: 20%;
+                    }
+                }
+            }
+        }
     }
 }

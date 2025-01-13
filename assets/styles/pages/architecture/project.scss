@@ -1,44 +1,69 @@
-.architecture {
+.architecture {   
+    margin: 0 4rem;
     display: flex;
     flex-direction: column;
-    gap: 15rem;
     font-family: 'avenir', sans-serif;
+    box-sizing: border-box;
+
+    .img-mobile {
+        display: none;
+    }
 
     #section1 {
+        width: 100%;
         display: flex;
-        justify-content: space-evenly;
+        align-items: flex-start;
+        justify-content: center;      
+        margin-bottom: 15rem;
 
         .plans {
+            width: 100%;
             display: flex;
+            flex-direction: row;
             justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
+            align-items: flex-start;
 
-            img {
-                width: 500px;
-                object-fit: contain;
-                cursor: pointer;
+            .plan-container {
+                width: 100%;
+                img {
+                    display: block;
+                    margin: 0 auto;
+                    width: 90%;
+                    height: auto;
+                    object-fit: cover;
+                    cursor: pointer;
+                    align-self: flex-end;
+                }
+                p {
+                    font-style: italic;
+                    color: #8f8888;
+                    margin-left: 4rem;
+                }
             }
+            
+            
         }
 
+        
+
         .text-container {
-            max-width: 280px;
-            text-align: left;
+            width: 280px;
+            text-align: start;
             border-left: 4px solid #8f8888;
             padding-left: 25px;
+            box-sizing: border-box;
+            margin: 0 auto;
 
             h1 {
                 font-weight: bold;
                 font-size: 28px;
                 margin-bottom: 15px;
-                margin-left: 15px;
             }
 
             p {
                 font-size: 14px;
                 margin-right: 35px;
-                margin-left: 15px;
-                line-height: 16px;
+                line-height: 19px;
 
                 .label {
                     font-weight: bold;
@@ -46,7 +71,6 @@
             }
 
             p:last-of-type {
-                font-size: 16px;
                 margin-top: 20px;
             }
         }
@@ -57,12 +81,8 @@
         display: flex;
         flex-direction: column;
         gap: 15rem;
+        margin-bottom: 8rem;
 
-        p {
-            margin-bottom: 1rem;
-            font-size: 28px;
-            margin-left: 130px;
-        }
 
         .pictures {
             display: grid;
@@ -73,7 +93,7 @@
 
             img {
                 width: 400px;
-                height: 500px;
+                height: auto;
                 object-fit: cover;
                 cursor: pointer;
             }
@@ -81,19 +101,39 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1600px) {
     .architecture {
-        #section1 {
-            .plans {
-                flex-direction: column;
-
+        #section2 {
+            .pictures {
                 img {
-                    width: 400px;
+                    width: 360px;
                 }
             }
+        }
+    }
+}
 
+@media screen and (max-width: 1380px) {
+    .architecture {
+        #section1 {
+            flex-direction: column;
             .text-container {
-                max-width: 250px;
+                width: 80%;
+                margin: 0 auto;
+                border-left: none;
+                padding-left: 0;
+            }
+
+            .plans {
+                order: 2;
+
+                .plan-container {
+                    
+                    img {
+                        width: 90%;
+                    }
+                }
+                
             }
         }
 
@@ -104,6 +144,72 @@
 
             .pictures {
                 grid-template-columns: repeat(2, 1fr);
+
+                img {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1177px) {
+    .architecture {
+        #section1 {
+            .plans {
+                width: 100%;
+                flex-direction: column;
+                
+                .plan-container {
+                    width: 100%;
+                    img {
+                        display: block;
+                        width: 90%;
+                        margin: 0 auto;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .architecture {
+        #section2 {
+            .pictures {
+                grid-template-columns: repeat(1, 1fr);
+                img {
+                    width: 75%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .architecture {
+        .img-mobile {
+            display: flex;
+            width: 100%;
+            margin-bottom: 6rem;
+            img {
+                width: 85%;
+                height: auto;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .architecture {
+        margin: 0 0.1rem;
+        #section2 {
+            .pictures {
+                img {
+                    width: 70%;
+                }
             }
         }
     }
@@ -114,12 +220,13 @@
         #section1 {
             .plans {
                 img {
-                    width: 300px;
+                    width: 70%;
+                    object-fit: cover;
                 }
             }
 
             .text-container {
-                max-width: 200px;
+                width: 80%;
             }
         }
 
@@ -127,9 +234,25 @@
             p {
                 margin-left: 50px;
             }
+        }
+    }
+}
 
+@media screen and (max-width: 700px) {
+    .architecture {
+        #section1 {
+            .plans {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        #section2 {
             .pictures {
-                grid-template-columns: repeat(1, 1fr);
+                img {
+                    width: 85%;
+                }
             }
         }
     }

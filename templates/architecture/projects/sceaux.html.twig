@@ -2,9 +2,21 @@
 
 {% block title %}Projet Sceaux{% endblock %}
 
+{% block imgmobile %}
+    <div class="img-mobile">
+        <img src="{{ asset('upload/architecture/sceaux/sceaux3.jpg')|imagine_filter('images_architecture_picture') }}" alt="photo-2">
+    </div>
+{% endblock %}
+
 {% block plans %}
-    <img src="{{ asset('upload/architecture/sceaux/svg/plansceaux1-optimized.svg') }}" alt="plan-proyect1">
-    <img src="{{ asset('upload/architecture/sceaux/svg/plansceaux2-optimized.svg') }}" alt="plan-proyect2">
+    <div class="plan-container">
+        <img src="{{ asset('upload/architecture/sceaux/svg/plansceaux1-optimized.svg') }}" alt="plan-proyect1">
+        <p>Avant</p>
+    </div>
+    <div class="plan-container">
+        <img src="{{ asset('upload/architecture/sceaux/svg/plansceaux2-optimized.svg') }}" alt="plan-proyect2">
+        <p>Aprés</p>
+    </div>
 {% endblock %}
 
 {% block project_title %}
@@ -14,19 +26,19 @@
     Rénovation d’un appartement
 {% endblock %}
 {% block project_localization %}
-    Paris XVII
+    Sceaux
 {% endblock %}
 {% block project_surface %}
-    60 m²
+    40 m²
 {% endblock %}
 {% block project_budget %}
     NC
 {% endblock %}
 {% block project_status %}
-    Livré en janvier 2023
+    Livré en juillet 2024
 {% endblock %}
 {% block project_description %}
-    Lorem ipsum dolor sit amet, magna aliquam erat volutpat. Ut volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation magna aliquam erat volutpat. Ut volutpat. magna aliquam erat volutpat. Ut volutpat. magna aliquam erat volutpat. Ut volutpat.magna aliquam erat volutpat. Ut volutpat. magna aliquam erat volutpat. Ut volutpat. ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat magna aliquam erat volutpat. Ut volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo conseqa.
+    La transformation proposée s’articule autour d’une nouvelle distribution des espaces de vie, favorisant la lumière et la fluidité des circulations. La cuisine est désormais ouverte sur le salon. Cet agencement offre une vaste pièce à vivre baignée de lumière avec une vue dégagée à hauteur des arbres et permet de renforcer le lien entre l’intérieur et l’extérieur. L’ancienne porte de la cuisine est supprimée afin de créer un espace de rangement astucieux, intégré dans l’épaisseur des colonnes montantes d’eau. Cette approche optimise la fonctionnalité tout en valorisant chaque mètre carré disponible. La salle de bain, entièrement repensée, s’accompagne d’une réorganisation des sanitaires. Les toilettes sont désormais indépendantes, et directement accessibles depuis l’entrée, assurant confort et intimité.
 {% endblock %}
 
 {% block present %}

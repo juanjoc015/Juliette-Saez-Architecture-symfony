@@ -1,26 +1,108 @@
-.design section .plans {
-    margin-left: 3rem;
+.design {
+    margin: 0 3% !important;
+    section .plans {
+        gap: 3rem !important;
+        justify-content: flex-start !important;
+        
+        :nth-child(1) {
+            width: 900px;         // Ocupa todo el ancho del contenedor
+            height: auto;        // Ajusta la altura automáticamente manteniendo la proporción
+        }
+        :nth-child(2) {
+            width: 224px;
+            height: auto;
+        }
+    
+        :nth-child(3) {
+    
+            width: 900px;         // Ocupa todo el ancho del contenedor
+            height: auto;        // Ajusta la altura automáticamente manteniendo la proporción
+    
+        }
+    
+        :nth-child(4) {
+            margin-left: 1.2rem;
+            width: 200px;
+            object-fit: cover;
+            height: 400px;
+        }
 
-    :nth-child(1) {
-        width: 900px;         // Ocupa todo el ancho del contenedor
-        height: auto;        // Ajusta la altura automáticamente manteniendo la proporción
     }
-    :nth-child(2) {
-        width: 224px;
-        height: auto;
-    }
-
-    :nth-child(3) {
-
-        width: 900px;         // Ocupa todo el ancho del contenedor
-        height: auto;        // Ajusta la altura automáticamente manteniendo la proporción
-
-    }
-
-    :nth-child(4) {
-        margin-left: 1.2rem;
-        width: 200px;
-        object-fit: contain;
-    }
-
 }
+            
+
+@media screen and (max-width: 1890px) {
+    .design {
+        section {
+            #section1 {
+                .plans {
+                    :nth-child(1) {
+                        width: 69%;       
+                    }
+                    :nth-child(2) {
+                        width: 17%;       
+                    }
+                    :nth-child(3) {
+                        width: 70%;       
+                    } 
+                }                 
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1035px) {
+    .design {
+        section {
+            #section1 {
+                .plans {
+
+                    > :nth-child(1) {
+                        width: 80%;       
+                    }
+                    > :nth-child(2) {
+                        width: 20%;
+                    }
+                    > :nth-child(3) {
+                        width: 80%;
+                        margin-bottom: 2rem;         
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .design {
+        section {
+            #section1 {
+                .plans {
+                    > :nth-child(2) {
+                        width: 24%;
+                        object-fit: contain;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .design {
+        section {
+            #section1 {
+                .plans {
+                    > :nth-child(2) {
+                        width: 26%;
+                    }
+                    > :nth-child(4) {
+                        width: 20%;
+                    }
+                }
+            }
+        }
+    }
+}
+
