@@ -177,7 +177,20 @@
     }
 }
 
+@media screen and (max-width: 1401px) {
+    .design {
+        section {
+            #section1 {
+                div {
+                    .text-container {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
 
+}
 
 @media screen and (max-width: 860px) {
     .design {
