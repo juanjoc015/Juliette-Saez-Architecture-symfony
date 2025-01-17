@@ -1,4 +1,4 @@
-{% extends "layouts/base_design.html.twig" %}
+{% extends "layouts/base.html.twig" %}
 
 {% block title %}Projet Sareeslight{% endblock %}
 
@@ -8,34 +8,38 @@
     <link rel="stylesheet" href="{{ asset('styles/pages/design/projects/sareeslight.scss') }}">
 {% endblock %}
 
-{% block plans %}
-    <div class="mesures-sareelight">
-        <img src="{{ asset('upload/design/sareelight/svg/sareeslight1-optimized.svg') }}" alt="photo bureau I">
-        <img src="{{ asset('upload/design/sareelight/svg/sareeslight2-optimized.svg') }}" alt="photo bureau I">
-        <img src="{{ asset('upload/design/sareelight/svg/sareeslight3-optimized.svg') }}" alt="photo bureau I">
-        <img src="{{ asset('upload/design/sareelight/svg/sareeslight4-optimized.svg') }}" alt="photo bureau I">
+{% block body %}
+<div id="sarelight">
+    <div class="img-sareelight">
+        <img src="{{ asset('upload/design/sareelight/sareeslight.jpg')|imagine_filter('image_sareelight') }}" alt="photo sareelight">
     </div>
-    <div class="isometric-sareelight">
-        <img src="{{ asset('upload/design/sareelight/svg/couleur-1-optimized.svg') }}" alt="">
-        <img src="{{ asset('upload/design/sareelight/svg/couleur-2-optimized.svg') }}" alt="">
-        <img src="{{ asset('upload/design/sareelight/svg/couleur-3-optimized.svg') }}" alt="">
-        <img src="{{ asset('upload/design/sareelight/svg/couleur-4-optimized.svg') }}" alt="">
-        <img src="{{ asset('upload/design/sareelight/svg/couleur-5-optimized.svg') }}" alt="">
-        <img src="{{ asset('upload/design/sareelight/svg/couleur-6-optimized.svg') }}" alt="">
+    <div class="plans" data-modal="pictures">
+        <div class="mesures-sareelight">
+            <img src="{{ asset('upload/design/sareelight/svg/sareeslight1-optimized.svg') }}" alt="photo bureau I">
+            <img src="{{ asset('upload/design/sareelight/svg/sareeslight2-optimized.svg') }}" alt="photo bureau I">
+            <img src="{{ asset('upload/design/sareelight/svg/sareeslight3-optimized.svg') }}" alt="photo bureau I">
+            <img src="{{ asset('upload/design/sareelight/svg/sareeslight4-optimized.svg') }}" alt="photo bureau I">
+        </div>
+        <div class="isometric-sareelight">
+            <img src="{{ asset('upload/design/sareelight/svg/couleur-1-optimized.svg') }}" alt="">
+            <img src="{{ asset('upload/design/sareelight/svg/couleur-2-optimized.svg') }}" alt="">
+            <img src="{{ asset('upload/design/sareelight/svg/couleur-3-optimized.svg') }}" alt="">
+            <img src="{{ asset('upload/design/sareelight/svg/couleur-4-optimized.svg') }}" alt="">
+            <img src="{{ asset('upload/design/sareelight/svg/couleur-5-optimized.svg') }}" alt="">
+            <img src="{{ asset('upload/design/sareelight/svg/couleur-6-optimized.svg') }}" alt="">
+        </div>
     </div>
-{% endblock %}
+    <div>
+        <div class="description-sarrelight">
+            <h1>SAREE LIGHT</h1>
+            <p>En collaboration avec Lucas Delaire</p>
+            <p>Sarees Light questionne la diffusion de la lumière à travers le tissu dans un style moderne avec des inspirations traditionnelles.</p>
+            <p>L'Inde inspire à la fois la couleur, la chaleur et la diversité. L'une de nos principales sources d'inspiration est le sari, un vêtement traditionnel attrayant pour ses drapés et ses couleurs. La lumière s'atténue lorsqu'elle traverse le tissu à travers le tissu et crée une atmosphère chaleureuse chaleureuse, conviviale et rassurante. La structure en tube chromé s'inspire des cintres pour un style moderne et épuré et une impression de légèreté. La structure est facile à assembler et à déplacer, avec un processus d'assemblage classique et robuste. Les pieds en plastique noir assurent une bonne stabilité. Les proportions de Sarees Light sont de 1,50 m de haut et de 1 m de large. Au centre, se trouve le néon (les câbles électriques passent à l’intérieur l'un des tubes chromé). Autour du néon et entre chaque tube, un tissu est tendu en différentes couleurs. Dans un intérieur, Sarees Light dicte l'atmosphère de l'espace grâce à la couleur de ces tissus. Le design de Sarees Light est modulable, il est possible d'utiliser des tissus d'autres couleurs ou des tissus recyclés.</p>
+        </div>
+    </div>
 
-{% block project_title %}SAREE LIGHT{% endblock %}
-{% block project_description %}
-    <div class="description-sarrelight">
-        <p>En collaboration avec Lucas Delaire</p>
-        <p>Sarees Light questionne la diffusion de la lumière à travers le tissu dans un style moderne avec des inspirations traditionnelles.</p>
-        <p>L'Inde inspire à la fois la couleur, la chaleur et la diversité. L'une de nos principales sources d'inspiration est le sari, un vêtement traditionnel attrayant pour ses drapés et ses couleurs. La lumière s'atténue lorsqu'elle traverse le tissu à travers le tissu et crée une atmosphère chaleureuse chaleureuse, conviviale et rassurante. La structure en tube chromé s'inspire des cintres pour un style moderne et épuré et une impression de légèreté. La structure est facile à assembler et à déplacer, avec un processus d'assemblage classique et robuste. Les pieds en plastique noir assurent une bonne stabilité. Les proportions de Sarees Light sont de 1,50 m de haut et de 1 m de large. Au centre, se trouve le néon (les câbles électriques passent à l’intérieur l'un des tubes chromé). Autour du néon et entre chaque tube, un tissu est tendu en différentes couleurs. Dans un intérieur, Sarees Light dicte l'atmosphère de l'espace grâce à la couleur de ces tissus. Le design de Sarees Light est modulable, il est possible d'utiliser des tissus d'autres couleurs ou des tissus recyclés.</p>
-    </div>
-{% endblock %}
-
-{% block pictures %}
-    <div class="pictures" data-modal="pictures">
-        <img src="{{ asset('upload/design/sareelight/sareeslight.jpg')|imagine_filter('images_design_picture') }}" alt="" width="300">
-    </div>
+</div>
+<div class="pictures" data-modal="pictures">
+        <img src="{{ asset('upload/design/sareelight/sareeslight.jpg')|imagine_filter('image_sareelight') }}" alt="photo sareelight">
+</div>
 {% endblock %}

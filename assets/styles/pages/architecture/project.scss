@@ -48,7 +48,7 @@
 
         .text-container {
             width: 280px;
-            text-align: start;
+            text-align: justify;
             border-left: 4px solid #8f8888;
             padding-left: 25px;
             box-sizing: border-box;
@@ -62,7 +62,6 @@
 
             p {
                 font-size: 14px;
-                margin-right: 35px;
                 line-height: 19px;
 
                 .label {
@@ -191,32 +190,27 @@
     .architecture {
         .img-mobile {
             display: flex;
-            width: 100%;
             margin-bottom: 6rem;
+            width: 100%;
+            box-sizing: border-box;
             img {
                 width: 85%;
-                height: auto;
                 margin: 0 auto;
             }
         }
     }
 }
 
-@media screen and (max-width: 870px) {
-    .architecture {
-        margin: 0 0.1rem;
-        #section2 {
-            .pictures {
-                img {
-                    width: 70%;
-                }
-            }
-        }
-    }
-}
+
 
 @media screen and (max-width: 758px) {
     .architecture {
+        margin: 0 1rem;
+        .img-mobile {
+            img {
+                width: 90%;
+            }
+        }
         #section1 {
             .plans {
                 img {
@@ -226,7 +220,7 @@
             }
 
             .text-container {
-                width: 80%;
+                width: 90%;
             }
         }
 
@@ -252,6 +246,39 @@
             .pictures {
                 img {
                     width: 85%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .architecture {
+        .img-mobile {
+            img {
+                width: 100%;
+            }
+        }
+
+        #section1 {
+            margin-bottom: 8rem;
+            .text-container {
+                margin: 0;
+                width: 100%;
+            }
+
+            .plans {
+                .plan-container {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        #section2 {
+            .pictures {
+                img {
+                    width: 100%;
                 }
             }
         }

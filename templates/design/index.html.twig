@@ -12,21 +12,21 @@
     <!-- Tarjeta Bureaux I -->
     <div class="card-design">
         <a href="{{ path('project_bureauafppcdI') }}">
-            <img src="{{ asset('upload/design/bureau1.png') }}" alt="Sarree Light">
+            <img src="{{ asset('upload/design/bureau1.png')|imagine_filter('images_accueil_design') }}" alt="Sarree Light">
         </a>
     </div>
 
     <!-- Tarjeta Bureau II -->
     <div class="card-design">
         <a href="{{ path('project_bureauafppcdII') }}">
-            <img src="{{ asset('upload/design/bureau2.jpg') }}" alt="Bureaux II">
+            <img src="{{ asset('upload/design/bureau2.jpg')|imagine_filter('images_accueil_design') }}" alt="Bureaux II">
         </a>
     </div>
 
     <!-- Tarjeta Sarree Light -->
     <div class="card-design">
         <a href="{{ path('project_sareelight') }}">
-            <img src="{{ asset('upload/design/saree.jpg') }}" alt="Sarees Light">
+            <img src="{{ asset('upload/design/saree.jpg')|imagine_filter('images_accueil_design') }}" alt="Sarees Light">
         </a>
     </div>
 </div>

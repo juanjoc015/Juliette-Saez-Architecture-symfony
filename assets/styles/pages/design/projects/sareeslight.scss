@@ -1,81 +1,295 @@
-.design {
-    margin: 0 4% !important;
-    justify-content: space-around;
+#sarelight {
+    margin: 0 2%;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
 
+    .img-sareelight {
+        display: none;
+    }
 
-    section .plans {
-        width: 100%;
+    .plans {
+        width: 75%;
         display: flex;
         flex-direction: column;
-        gap: 1rem !important;
+
+        img {
+            cursor: pointer;
+            object-fit: contain;
+        }
+
         .mesures-sareelight {
-            width: 100%;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-
-            img {
-                margin: 0 auto;
-            }
-
+            grid-template-columns: 344px 344px;
+            justify-content: center;
+            justify-items: center;
+            column-gap: 4rem;
             :nth-child(1) {
-                width: 500px;
+                width: 100%;
+                max-width: 220px;
                 height: 500px;
             }
+
             :nth-child(2) {
-                width: 500px;
+                width: 100%;
+                max-width: 400px;
                 height: 500px;
             }
+
             :nth-child(3) {
-                width: 220px;
+                width: 100%;
+                max-width: 215px;
                 height: 500px;
             }
+
             :nth-child(4) {
-                width: 260px;
+                width: 100%;
+                max-width: 230px;
                 height: 500px;
             }
         }
 
         .isometric-sareelight {
-            width: 100%;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
+            width: 1400px;
+            margin-bottom: 8rem;
         }
 
-        
+
 
     }
 
-    .text-container {
-        width: 70%;
-        margin-left: 4rem;
+    .description-sarrelight {
+        width: 400px;
+        height: auto;
+        text-align: justify;
+        border-left: 4px solid #8f8888;
+        padding-left: 25px;
+        box-sizing: border-box;
+        margin-bottom: 3rem !important;
+
+        h1 {
+            font-weight: bold;
+            font-size: 28px;
+            margin-bottom: 1.2rem;
+            margin-left: 15px;
+            top: 0;
+
+        }
+
+        p:nth-of-type(1) {
+            margin-bottom: 0.6rem;
+            font-style: italic;
+        }
+
+        p:nth-of-type(2) {
+            margin-bottom: 0.6rem;
+        }
+
         p {
-            font-family: sans-serif;
+            width: 80%;
+            font-size: 14px;
+            line-height: 21px;
+            margin-left: 15px;
+            color: #444;
+        
+        
+            .label {
+                font-weight: bold;
+            }
+        }
+    }
+}
+.pictures {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+@media screen and (max-width: 1890px) {
+    #sarelight {
+        flex-direction: column;
+        .img-sareelight {
+            display: flex;
+            margin-bottom: 5rem;
+            img {
+                width: 100%;
+                max-width: 996px;
+                height: auto;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        .plans {
+            width: 100%;
+            order: 2;
+
+            .mesures-sareelight {
+                grid-template-columns: 40% 40%;
+                column-gap: 0;
+
+                :nth-child(4) {
+                    max-width: 230px;
+                }
+            }
+
+            .isometric-sareelight {
+                width: 100%;
+            }
         }
 
         .description-sarrelight {
-            :nth-child(1) {
-                margin-bottom: 0.6rem;
-                font-style: italic;
+            width: 70%;
+            border-left: none;
+            padding: 1rem;
+            padding-left: 4rem;
+            margin-bottom: 5rem !important;
+
+            h1 {
+                padding-top: 1rem;
+                margin-left: 0;
             }
-            
+
+            p {
+                width: fit-content;
+                margin-left: 0;
+            }
         }
-        .description-sarrelight p:nth-of-type(3) {
-            font-size: 14px !important;
+    }
+    
+    .pictures {
+        display: none;
+    }
+}
+   
+@media screen and (max-width: 1500px) {
+    #sarelight {
+        flex-direction: column;
+
+        
+    }
+    
+}
+
+@media screen and (max-width: 1100px) {
+    #sarelight {
+        .description-sarrelight {
+            width: 100%;
+            padding: 0;
+
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #sarelight {
+        .plans {
+            
+            .mesures-sareelight {
+    
+                :nth-child(1) {
+                    max-width: 170px;
+                }
+                :nth-child(2) {
+                    max-width: 270px;
+                }
+                :nth-child(3) {
+                    max-width: 170px;
+                }
+                :nth-child(4) {
+                    max-width: 185px;
+                }
+            }
         }
         
     }
+}
 
-    .pictures {
-        width: 100%;
-        display: flex;
-        justify-content: center;
+@media screen and (max-width: 900px) {
+    #sarelight {
+        margin: 0 1rem;
+        .plans {
+            .mesures-sareelight {
+                grid-template-columns: 45% 55%;
+            }
 
-        img {
-            width: 75% !important;
-            height: auto;
+            .isometric-sareelight {
+                display: flex;
+                flex-direction: column;
+
+                img {
+                    width: 60%;
+                    height: auto;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
         }
     }
+}
 
-}  
-   
-    
+@media screen and (max-width: 600px) {
+    #sarelight {
+        .plans {
+            .mesures-sareelight {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                align-content: center;
+                row-gap: 8rem;
+                margin-bottom: 10rem;
+
+                
+                :nth-child(1){
+                    height: 400px;
+                    max-width: 160px;    
+                }
+                :nth-child(2){
+                    height: 400px;
+                }
+                :nth-child(3){
+                    height: 300px;
+                }
+                :nth-child(4){
+                    height: 300px;
+                }
+            }
+
+            .isometric-sareelight {
+                img {
+                    width: 80%;
+                }
+            }
+        }
+
+        .description-sarrelight {
+            padding: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #sarelight {
+        .plans {
+            .isometric-sareelight {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 349px) {
+    #sarelight {
+        .plans {
+            .mesures-sareelight {
+                row-gap: 3rem;
+            }
+        }
+    }
+}
