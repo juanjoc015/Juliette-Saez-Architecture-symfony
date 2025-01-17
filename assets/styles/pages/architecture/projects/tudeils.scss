@@ -10,15 +10,14 @@
         .image-tudeils {
             
             img {
-                width: 1024px;
-                height: 730px;
-                object-fit: contain;
+                width: 100%;
+                height: auto;
             }
         }
 
         .text-container {
             width: 400px;
-            text-align: left;
+            text-align: justify;
             border-left: 4px solid #8f8888;
             padding-left: 25px;
             height: auto;
@@ -83,13 +82,12 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             row-gap: 5rem;
+            column-gap: 5rem;
             justify-content: center;
             justify-items: center;
 
             img {
-                width: 500px;
-                height: auto;
-                object-fit: cover;
+                width: 100%;
                 cursor: pointer;
             }
         }
@@ -101,7 +99,7 @@
 }
 
 
-@media (max-width: 1750px) {
+/*@media screen and (max-width: 1750px) {
     #page-tudeils {
         #section3 {
             .pictures {
@@ -109,9 +107,9 @@
             }
         }
     }
-}
+}*/
 
-@media (max-width: 1667px) {
+@media screen and (max-width: 1667px) {
     #page-tudeils {
         margin: 0 2rem;
 
@@ -156,7 +154,7 @@
                 .svg-tudeils {
                     
                     img {
-                        width: 80%;
+                        width: 70%;
                     }
                     p {
                         width: 80%;
@@ -169,14 +167,19 @@
         #section3 {
             .pictures {
                 grid-template-columns: repeat(2, 1fr);
-                row-gap: 10rem;
+                gap: 10rem;
+                padding: 3rem;
 
+                img {
+                    max-width: 500px;
+                    max-height: 666px;
+                }
             }
         }
     }
 }
 
-@media (max-width: 1164px) {
+@media screen and (max-width: 1164px) {
     #page-tudeils {
         margin: 0 2rem;
         #section1 {
@@ -188,10 +191,6 @@
             .image-tudeils {
                 display: flex;
                 justify-content: center;
-                img {
-                    width: 100%;
-                    height: auto;
-                }
             }
 
             .text-container {
@@ -221,27 +220,21 @@
     }
 }
 
-@media (max-width: 650px) {
+@media screen and (max-width: 650px) {
     #page-tudeils {
-        #section1 {
-            .text-container {
-                p:last-of-type {
-                    width: 90%;
-                }
-            }
+        #section2 {
+            margin-bottom: 6rem;
         }
     }
 }
 
-@media (max-width: 561px) {
+@media screen and (max-width: 561px) {
     #page-tudeils {
         margin: 0 1rem;
-        #section2 {
-
-        }
         #section3 {
             .pictures {
                 row-gap: 3rem;
+                padding: 0;
                 img {
                     width: 100%;
                 }

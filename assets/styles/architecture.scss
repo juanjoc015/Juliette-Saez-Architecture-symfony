@@ -13,7 +13,6 @@
     box-sizing: border-box;
     position: relative;
     border: 1px solid black;
-    height: 302px;
     overflow: hidden;
 
     img {
@@ -24,14 +23,24 @@
     }
 
     .card-title {
+        display: none;
         position: absolute;
         bottom: 5px;
-        left: 5px;
-        font-size: 26px;
+        left: 50%;  
+        font-weight: normal;                 // Lo coloca al 50% (mitad) del contenedor
+        transform: translateX(-50%);
+        font-size: 20px;
         // color blanco con opacidad
-        color: rgba(255, 255, 255, 0.9);
+        color: rgb(255, 255, 255);
         padding: 3px 5px;
+
     }
+    &:hover {
+        .card-title {
+          display: flex;
+        }
+    }
+    
 }
 
 @media screen and (max-width: 1200px) {
@@ -44,6 +53,8 @@
 @media screen and (max-width: 900px) {
     .card-container {
         gap: 70px;
+
+
     }
 }
 

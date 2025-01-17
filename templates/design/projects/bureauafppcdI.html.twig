@@ -5,12 +5,12 @@
 {% block stylesheets %}
     {{ parent() }}
 
-    <link rel="stylesheet" href="{{ asset('styles/pages/design/projects/bureauI.scss') }}">
+    <link rel="stylesheet" href="{{ asset('styles/pages/design/projects/bureauI.scss')}}">
 {% endblock %}
 
 {% block imgmobile %}
     <div class="img-mobile">
-        <img src="{{ asset('upload/design/bureauafppcdI/bureauIphoto1.jpg')}}" alt="photo-bureauI">
+        <img src="{{ asset('upload/design/bureauafppcdI/bureauIphoto1.jpg')|imagine_filter('images_design_picture') }}" alt="photo-bureauI">
     </div>
 {% endblock %}
 

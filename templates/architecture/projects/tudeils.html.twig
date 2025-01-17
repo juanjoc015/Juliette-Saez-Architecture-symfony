@@ -11,7 +11,10 @@
     <div id="page-tudeils">
         <section id="section1">
             <div class="image-tudeils">
-                <img src="{{ asset('upload/architecture/tudeils/tudeils.jpeg')|imagine_filter('image_home_tudeils') }}" alt="plan-proyect1">
+                <picture>
+                    <source srcset="{{ asset('upload/architecture/tudeils/tudeils.jpeg') | imagine_filter('image_mobile_tudeils') }}" media="(max-width: 768px)">
+                    <img src="{{ asset('upload/architecture/tudeils/tudeils.jpeg') | imagine_filter('image_desktop_tudeils') }}" alt="plan-proyect1">
+                </picture>
             </div>
 
             <div class="text-container">
@@ -58,35 +61,143 @@
 
         <section id="section3">
             <div class="pictures" data-modal="pictures">
-                <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils1.jpg') }}  " alt="">
-                <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils2.jpg') }}  " alt="">
-                <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils3.jpg') }}  " alt="">
-                <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils4.jpg') }}  " alt="">
-                <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils5.jpg') }}  " alt="">
-                <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils6.jpg') }}  " alt="">
-                <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils7.jpg') }}  " alt="">
-                <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils8.jpg') }}  " alt="">
-                <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils9.jpg') }}  " alt="">
-                <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils10.jpg') }}  " alt="">
-                <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils11.jpg') }}  " alt="">
-                <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils12.jpg') }}  " alt="">
-                <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils13.jpg') }}  " alt="">
-                <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils14.jpg') }}  " alt="">
-                <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils15.jpg') }}  " alt="">
-                <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils16.jpg') }}  " alt="">
-                <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils17.jpg') }}  " alt="">
-                <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils18.jpg') }}  " alt="">
+                <picture>
+                    <source 
+                        srcset="{{ asset('upload/architecture/tudeils/aprés/tudeils1.jpg') | imagine_filter('images_gallery_mobile_tudeils') }}" 
+                        media="(max-width: 660px)"
+                    >
+                    <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils1.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}  " alt="">
+                </picture>
+                <picture>
+                    <source 
+                        srcset="{{ asset('upload/architecture/tudeils/aprés/tudeils2.jpg') | imagine_filter('images_gallery_mobile_tudeils') }}" 
+                        media="(max-width: 660px)"
+                    >
+                    <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils2.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}  " alt="">
+                </picture>
+                <picture>
+                    <source 
+                        srcset="{{ asset('upload/architecture/tudeils/aprés/tudeils3.jpg') | imagine_filter('images_gallery_mobile_tudeils') }}" 
+                        media="(max-width: 660px)"
+                    >
+                    <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils3.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}  " alt="">
+                </picture>
+                <picture>
+                    <source 
+                        srcset="{{ asset('upload/architecture/tudeils/aprés/tudeils4.jpg') | imagine_filter('images_gallery_mobile_tudeils') }}" 
+                        media="(max-width: 660px)"
+                    >
+                    <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils4.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}  " alt="">
+                </picture>
+                <picture>
+                    <source 
+                        srcset="{{ asset('upload/architecture/tudeils/aprés/tudeils5.jpg') | imagine_filter('images_gallery_mobile_tudeils') }}" 
+                        media="(max-width: 660px)"
+                    >
+                    <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils5.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}  " alt="">
+                </picture>
+                <picture>
+                    <source 
+                        srcset="{{ asset('upload/architecture/tudeils/aprés/tudeils6.jpg') | imagine_filter('images_gallery_mobile_tudeils') }}" 
+                        media="(max-width: 660px)"
+                    >
+                    <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils6.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}  " alt="">
+                </picture>
+                <picture>
+                    <source 
+                        srcset="{{ asset('upload/architecture/tudeils/aprés/tudeils7.jpg') | imagine_filter('images_gallery_mobile_tudeils') }}" 
+                        media="(max-width: 660px)"
+                    >
+                    <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils7.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}  " alt="">
+                </picture>
+                <picture>
+                    <source 
+                        srcset="{{ asset('upload/architecture/tudeils/aprés/tudeils8.jpg') | imagine_filter('images_gallery_mobile_tudeils') }}" 
+                        media="(max-width: 660px)"
+                    >
+                    <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils8.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}  " alt="">
+                </picture>
+                <picture>
+                    <source 
+                        srcset="{{ asset('upload/architecture/tudeils/aprés/tudeils9.jpg') | imagine_filter('images_gallery_mobile_tudeils') }}" 
+                        media="(max-width: 660px)"
+                    >
+                    <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils9.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}  " alt="">
+                </picture>
+                <picture>
+                    <source 
+                        srcset="{{ asset('upload/architecture/tudeils/aprés/tudeils10.jpg') | imagine_filter('images_gallery_mobile_tudeils') }}" 
+                        media="(max-width: 660px)"
+                    >
+                    <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils10.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}  " alt="">
+                </picture>
+                <picture>
+                    <source 
+                        srcset="{{ asset('upload/architecture/tudeils/aprés/tudeils11.jpg') | imagine_filter('images_gallery_mobile_tudeils') }}" 
+                        media="(max-width: 660px)"
+                    >
+                    <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils11.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}  " alt="">
+                </picture>
+                <picture>
+                    <source 
+                        srcset="{{ asset('upload/architecture/tudeils/aprés/tudeils12.jpg') | imagine_filter('images_gallery_mobile_tudeils') }}" 
+                        media="(max-width: 660px)"
+                    >
+                    <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils12.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}  " alt="">
+                </picture>
+                <picture>
+                    <source 
+                        srcset="{{ asset('upload/architecture/tudeils/aprés/tudeils13.jpg') | imagine_filter('images_gallery_mobile_tudeils') }}" 
+                        media="(max-width: 660px)"
+                    >
+                    <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils13.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}  " alt="">
+                </picture>
+                <picture>
+                    <source 
+                        srcset="{{ asset('upload/architecture/tudeils/aprés/tudeils14.jpg') | imagine_filter('images_gallery_mobile_tudeils') }}" 
+                        media="(max-width: 660px)"
+                    >
+                    <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils14.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}  " alt="">
+                </picture>
+                <picture>
+                    <source 
+                        srcset="{{ asset('upload/architecture/tudeils/aprés/tudeils15.jpg') | imagine_filter('images_gallery_mobile_tudeils') }}" 
+                        media="(max-width: 660px)"
+                    >
+                    <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils15.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}  " alt="">
+                </picture>
+                <picture>
+                    <source 
+                        srcset="{{ asset('upload/architecture/tudeils/aprés/tudeils16.jpg') | imagine_filter('images_gallery_mobile_tudeils') }}" 
+                        media="(max-width: 660px)"
+                    >
+                    <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils16.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}  " alt="">
+                </picture>
+                <picture>
+                    <source 
+                        srcset="{{ asset('upload/architecture/tudeils/aprés/tudeils17.jpg') | imagine_filter('images_gallery_mobile_tudeils') }}" 
+                        media="(max-width: 660px)"
+                    >
+                    <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils17.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}  " alt="">
+                </picture>
+                <picture>
+                    <source 
+                        srcset="{{ asset('upload/architecture/tudeils/aprés/tudeils18.jpg') | imagine_filter('images_gallery_mobile_tudeils') }}" 
+                        media="(max-width: 660px)"
+                    >
+                    <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils18.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}  " alt="">
+                </picture>
             </div>
             <div class="pictures bw" data-modal="pictures">
-                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw1.jpg') }}" alt="">
-                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw2.jpg') }}" alt="">
-                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw3.jpg') }}" alt="">
-                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw4.jpg') }}" alt="">
-                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw5.jpg') }}" alt="">
-                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw6.jpg') }}" alt="">
-                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw7.jpg') }}" alt="">
-                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw8.jpg') }}" alt="">
-                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw9.jpg') }}" alt="">
+                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw1.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}" alt="">
+                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw2.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}" alt="">
+                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw3.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}" alt="">
+                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw4.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}" alt="">
+                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw5.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}" alt="">
+                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw6.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}" alt="">
+                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw7.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}" alt="">
+                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw8.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}" alt="">
+                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw9.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}" alt="">
             </div>
         </section>
     </div>
