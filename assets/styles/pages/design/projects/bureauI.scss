@@ -59,7 +59,18 @@
                     :nth-child(3) {
                         width: 80%;       
                     }  
-                }                 
+                }   
+                div {
+                    .text-container {
+                        .text {
+                            -webkit-line-clamp: 30;
+                            line-clamp: 30;
+                        }
+                        .toggle-btn {
+                            display: none;
+                        }
+                    }
+                }              
             }
         }
     }
@@ -95,6 +106,33 @@
                 .plans {
                     > :nth-child(2) {
                         width: 21%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 745px) {
+    .design {
+        section {
+            #section1 {
+                div {
+                    .text-container {
+                        .text {
+                            -webkit-line-clamp: 14;
+                            line-clamp: 14;
+            
+                            &.expanded {
+                                -webkit-line-clamp: unset;
+                                line-clamp: unset;
+                                overflow: visible;
+                            }
+                        }
+                        .toggle-btn {
+                            display: inline-block;
+                            bottom: 0;
+                        }
                     }
                 }
             }

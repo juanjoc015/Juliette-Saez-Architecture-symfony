@@ -5,6 +5,12 @@
 {% block stylesheets %}
     {{ parent() }}
     <link rel="stylesheet" href="{{ asset('styles/pages/architecture/projects/chuelles.scss') }}">
+    <link rel="stylesheet" href="{{ asset('styles/components/_longtext.scss') }}">
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ importmap('longtext') }}
 {% endblock %}
 
 {% block body %}
@@ -15,22 +21,22 @@
         <section id="section1">
             <div class="plans" data-modal="pictures"> 
                 <div class="plan-container">
-                    <img src="{{ asset('upload/architecture/chuelles/svg/plan_existant1-optimized.svg') }}" alt="">
+                    <img src="{{ asset('upload/architecture/chuelles/svg/plan_existant1-optimized.svg') }}" class="plan-image" alt="">
                     <p>Avant</p>
                 </div>
                 <div class="plan-container">
-                    <img src="{{ asset('upload/architecture/chuelles/svg/plan_projet2-optimized.svg') }}" alt="">
+                    <img src="{{ asset('upload/architecture/chuelles/svg/plan_projet2-optimized.svg') }}" class="plan-image" alt="">
                     <p>Aprés</p>
                 </div>
                 <div class="plan-container">
-                    <img src="{{ asset('upload/architecture/chuelles/svg/coupes3-optimized.svg') }}" alt="">
+                    <img src="{{ asset('upload/architecture/chuelles/svg/coupes3-optimized.svg') }}" class="plan-image" alt="">
                     <div class="titres-plan-chuelles">
                         <p>Coupe AA'</p>
                         <p>Coupe BB'</p>
                     </div>
                 </div>
                 <div class="plan-container">
-                    <img src="{{ asset('upload/architecture/chuelles/svg/elevation4-optimized.svg') }}" alt="">
+                    <img src="{{ asset('upload/architecture/chuelles/svg/elevation4-optimized.svg') }}" class="plan-image" alt="">
                     <p>Façade Nord</p>
                 </div>
             </div>
@@ -43,9 +49,10 @@
                         <p><span class="label">Surface :</span> 220 m2</p>
                         <p><span class="label">Budget :</span> NC</p>
                         <p><span class="label">Statut :</span> Livré en mai 2021</p>
-                        <p>
+                        <p class="text">
                             Le projet de rénovation de cette maison de campagne s’est déroulé en plusieurs phases, visant à moderniser et à agrandir l’habitat tout en préservant son caractère authentique. Dans un premier temps, la maison existante a été réorganisée pour optimiser les espaces. L’agrandissement de la cuisine a été rendu possible grâce à la suppression d’une chambre. Le cagibi et la salle de bain ont été repensés pour offrir une meilleure circulation et une plus grande fluidité entre les différentes zones de vie. Dans un second temps, deux extensions sont venues compléter la structure d’origine. La première concerne l’aménagement du garage en chambre d’amis, aménagée en mezzanine : un lit à l’étage, un canapé-lit en partie basse, le tout agrémenté d’un poêle à bois pour une ambiance chaleureuse. L’apport des réseaux électrique et d’eau a permis de créer un espace de vie indépendant, incluant des toilettes. Pour l’intégration à la façade existante, le dessin des ouvertures (portes et fenêtres) a été harmonisé avec celles de la maison, tandis qu’un sol en tomette rappelle le cachet de l’ancienne bâtisse. La seconde extension investit une partie de la grange, transformée en espace salle à manger / salon. Une isolation complète par l’intérieur assure le confort thermique, et des ouvertures en hauteur permettent de révéler la magnifique charpente en bois, ajoutant caractère et authenticité. L’ensemble de ces interventions offre une maison de campagne repensée, fonctionnelle et lumineuse, fidèle à l’âme du lieu et prête à accueillir famille et amis en toute convivialité.
                         </p>
+                        <button class="toggle-btn">Lire plus</button>
                 </div>
             </div>
         </section>

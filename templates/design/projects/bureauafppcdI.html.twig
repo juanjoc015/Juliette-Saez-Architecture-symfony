@@ -4,7 +4,6 @@
 
 {% block stylesheets %}
     {{ parent() }}
-
     <link rel="stylesheet" href="{{ asset('styles/pages/design/projects/bureauI.scss')}}">
 {% endblock %}
 
@@ -16,10 +15,10 @@
 
 
 {% block plans %}
-    <img src="{{ asset('upload/design/bureauafppcdI/svg/bureauI1-optimized.svg')}}" alt="photo bureau I">
-    <img src="{{ asset('upload/design/bureauafppcdI/svg/bureauI2-optimized.svg')}}" alt="photo bureau I">
-    <img src="{{ asset('upload/design/bureauafppcdI/svg/bureauI3-optimized.svg') }}" alt="photo bureau I">
-    <img src="{{ asset('upload/design/bureauafppcdI/texturebureauI.png')|imagine_filter('images_design_texture') }}" alt="photo bureau I">
+    <img src="{{ asset('upload/design/bureauafppcdI/svg/bureauI1-optimized.svg')}}" class="plan-image" alt="photo bureau I">
+    <img src="{{ asset('upload/design/bureauafppcdI/svg/bureauI2-optimized.svg')}}" class="plan-image bigone" alt="photo bureau I">
+    <img src="{{ asset('upload/design/bureauafppcdI/svg/bureauI3-optimized.svg') }}" class="plan-image" alt="photo bureau I">
+    <img src="{{ asset('upload/design/bureauafppcdI/texturebureauI.png')|imagine_filter('images_design_texture') }}" class="img-texture-design" alt="photo bureau I">
 {% endblock %}
 
 {% block project_title %}BUREAU I{% endblock %}

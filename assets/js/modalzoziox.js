@@ -51,7 +51,7 @@ function initLightbox() {
 
     // Función para abrir el modal
     function openModal(imageSrc) {
-        modal.style.display = 'block';
+        modal.style.display = 'flex';
         modalImg.src = imageSrc;
     }
 

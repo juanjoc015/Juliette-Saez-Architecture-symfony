@@ -1,0 +1,24 @@
+.text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 14;
+    line-clamp: 14;
+    overflow: hidden;
+
+    &.expanded {
+        -webkit-line-clamp: unset;
+        line-clamp: unset;
+        overflow: visible;
+    }
+}
+
+.toggle-btn {
+    margin-top: 20px;
+    color: #050505;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+}

@@ -1,0 +1,13 @@
+.text-container {
+    .toggle-btn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .text-container {
+        .toggle-btn {
+            display: none !important;
+        }
+    }
+}
