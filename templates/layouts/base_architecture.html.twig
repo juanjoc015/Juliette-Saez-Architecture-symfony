@@ -3,9 +3,12 @@
 {% block javascripts %}
     {{ parent() }}
     {{ importmap('architecture') }}
+    {{ importmap('longtext') }}
 {% endblock %}
 
-{% block stylesheets %}{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('styles/components/_longtext.scss') }}">
+{% endblock %}
 
 {% block body %}
 <div class="architecture">
@@ -22,9 +25,10 @@
             <p><span class="label">Surface :</span> {% block project_surface %}{% endblock %}</p>
             <p><span class="label">Budget :</span> {% block project_budget %}{% endblock %}</p>
             <p><span class="label">Statut :</span> {% block project_status %}{% endblock %}</p>
-            <p>
+            <p class="text">
                 {% block project_description %}{% endblock %}
             </p>
+            <button class="toggle-btn">Lire plus</button>
         </div>
 
     </section>

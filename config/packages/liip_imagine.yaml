@@ -11,7 +11,7 @@ liip_imagine:
                 cache_prefix: /media/cache
 
     filter_sets:
-      # Filtre page Acueil (galeria)
+      # Filtre page Acueil (galerie)
       images_galery:
         cache: default
         quality: 100
@@ -21,6 +21,17 @@ liip_imagine:
           thumbnail:
             size: [525, 700]
             mode: outbound
+      # Filtre modal(galerie) Page Accueil 
+      images_modal_galery:
+        cache: default
+        quality: 100
+        filters:
+          auto_rotate: ~
+          strip: ~
+          thumbnail:
+            size: [1200, 900]
+            mode: inset
+
       # Filtre pour les img dans Boursault, Gentilly et Sceaux
       images_architecture_picture:
         cache: default
@@ -159,6 +170,6 @@ liip_imagine:
           auto_rotate: ~
           strip: ~
           thumbnail:
-            size: [156, 58]
-            mode: outbound
+            size: [164, 61]
+            mode: inset
       cache: ~

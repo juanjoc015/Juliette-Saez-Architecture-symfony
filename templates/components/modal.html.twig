@@ -1,7 +1,10 @@
 <div id="modal-pictures" class="modal-pictures">
     <span class="close">&times;</span>
     <div class="modal-pictures-content">
-        <img id="modalImage" class="modal-content">
+        <img id="modalImage" class="modal-content"
+            src="{{ asset('upload/home/img1-gallery.jpg')|imagine_filter('images_modal_galery') }}" 
+            alt="Imagen en modal"
+        >
     </div>
     <a class="prev">&#10094;</a>
     <a class="next">&#10095;</a>

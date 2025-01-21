@@ -1,5 +1,6 @@
 .design {
     display: flex;
+    justify-content: center;
     gap: 20px;
     font-family: 'avenir', sans-serif;
     margin: 0 6%;
@@ -22,6 +23,10 @@
     
                 img {
                     cursor: pointer;
+                }
+
+                .img-texture-design {
+                    cursor: auto;
                 }
             }
 

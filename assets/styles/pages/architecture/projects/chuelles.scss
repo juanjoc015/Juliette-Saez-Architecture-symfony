@@ -186,6 +186,14 @@
                     margin: 0;
                     margin-top: 3rem;
                 }
+
+                .text {
+                    -webkit-line-clamp: 30;
+                    line-clamp: 30;
+                }
+                .toggle-btn {
+                    display: none;
+                }
             }
         }
 
@@ -315,8 +323,25 @@
         }
         #section1 {
             .text-container {
+                position: relative;
                 padding: 1rem;
                 width: 100%;
+                height: auto;
+
+                .text {
+                    -webkit-line-clamp: 14;
+                    line-clamp: 14;
+
+                    &.expanded {
+                        -webkit-line-clamp: unset;
+                        line-clamp: unset;
+                        overflow: visible;
+                    }
+                }
+                .toggle-btn {
+                    display: inline-block;
+                    bottom: 0;
+                }
             }
         }
         #section2 {

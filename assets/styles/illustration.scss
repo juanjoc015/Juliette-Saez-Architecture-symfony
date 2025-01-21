@@ -67,14 +67,16 @@
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.9);
+    justify-self: center;
+    align-self: center;
 }
 
 .lightbox-content {
-    margin: auto;
-    margin-top: 100px;
     display: block;
+    margin: auto;
     width: 80%;
     max-width: 700px;
+    
 }
 
 .close {
@@ -91,6 +93,7 @@
     cursor: pointer;
     position: absolute;
     top: 50%;
+    transform: translateY(-50%); /* Ajusta para centrar verticalmente */
     padding: 16px;
     color: #fff;
     font-weight: bold;

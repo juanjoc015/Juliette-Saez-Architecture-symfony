@@ -5,17 +5,24 @@
 {% block stylesheets %}
     {{ parent() }}
     <link rel="stylesheet" href="{{ asset('styles/pages/architecture/projects/lyon.scss') }}">
+    <link rel="stylesheet" href="{{ asset('styles/components/_longtext.scss') }}">
 {% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ importmap('longtext') }}
+{% endblock %}
+
 {% block body %}
     <div id="page-lyon">
         <section id="section1">
             <div class="plans" data-modal="pictures"> 
                 <div class="plan-container">
-                    <img src="{{ asset('upload/architecture/lyon/svg/plans_lyon1-optimized.svg') }}" alt="Plan del proyecto lyon 1">
+                    <img src="{{ asset('upload/architecture/lyon/svg/plans_lyon1-optimized.svg') }}" class="plan-image" alt="Plan del proyecto lyon 1">
                     <p>Avant</p>
                 </div>
                 <div class="plan-container">
-                    <img src="{{ asset('upload/architecture/lyon/svg/plans_lyon2-optimized.svg') }}" alt="Plan del proyecto lyon 2">
+                    <img src="{{ asset('upload/architecture/lyon/svg/plans_lyon2-optimized.svg') }}" class="plan-image" alt="Plan del proyecto lyon 2">
                     <p>Aprés</p>
                 </div>
             </div>
@@ -28,9 +35,10 @@
                         <p><span class="label">Surface :</span> 70 m2</p>
                         <p><span class="label">Budget :</span> NC</p>
                         <p><span class="label">Statut :</span> En cours</p>
-                        <p>
+                        <p class="text">
                             La transformation de ce studio en duplex s’appuie sur une reconfiguration complète des espaces avec l’aménagement des combles pour accueillir deux chambres, une salle de bain et un espace bureau.L’intervention débute par la création d’un escalier, reliant le niveau inférieur aux combles réaménagées. Cette intervention permet d’optimiser chaque recoin du volume existant et d’en faire un lieu de vie confortable. Une isolation thermique et acoustique de l’ensemble des surfaces des combles est mise en place. La structure (charpente) est repensée afin de faciliter l’accès aux chambre à l’étage. Le réseau électrique et la distribution d’eau sont prolongés assurant un approvisionnement efficace dans les nouveaux espaces à l’étage. La création de 6 velux permet d’ouvrir la toiture vers le ciel. Ce projet de transformation fait ainsi évoluer un simple studio en duplex.
                         </p>
+                        <button class="toggle-btn">Lire plus</button>
                 </div>
             </div>
         </section>

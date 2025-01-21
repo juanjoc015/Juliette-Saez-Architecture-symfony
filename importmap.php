@@ -28,6 +28,10 @@ return [
         'path' => './assets/architecture.js',
         'entrypoint' => true,
     ],
+    'longtext' => [
+        'path' => './assets/js/components/longtext.js',
+        'entrypoint' => true,
+    ],
     'illustration' => [
         'path' => './assets/illustration.js',
         'entrypoint' => true,

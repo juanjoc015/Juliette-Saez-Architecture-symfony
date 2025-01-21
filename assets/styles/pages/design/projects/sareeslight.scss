@@ -158,6 +158,14 @@
                 width: fit-content;
                 margin-left: 0;
             }
+
+            .text {
+                -webkit-line-clamp: 30;
+                line-clamp: 30;
+            }
+            .toggle-btn {
+                display: none;
+            }
         }
     }
     
@@ -272,6 +280,8 @@
     }
 }
 
+
+
 @media screen and (max-width: 500px) {
     #sarelight {
         .plans {
@@ -279,6 +289,27 @@
                 img {
                     width: 100%;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #sarelight {
+        .description-sarrelight {
+            .text {
+                -webkit-line-clamp: 14;
+                line-clamp: 14;
+
+                &.expanded {
+                    -webkit-line-clamp: unset;
+                    line-clamp: unset;
+                    overflow: visible;
+                }
+            }
+            .toggle-btn {
+                display: inline-block;
+                bottom: 0;
             }
         }
     }

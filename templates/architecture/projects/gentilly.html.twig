@@ -2,19 +2,24 @@
 
 {% block title %}Projet Gentilly{% endblock %}
 
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('styles/pages/architecture/projects/gentilly.scss') }}">
+{% endblock %}
+
 {% block imgmobile %}
     <div class="img-mobile">
-        <img src="{{ asset('upload/architecture/gentilly/gentilly1.jpg') | imagine_filter('images_architecture_picture') }}" alt="photo-2">
+        <img src="{{ asset('upload/architecture/gentilly/gentilly1.jpg')|imagine_filter('images_architecture_picture') }}" alt="photo-2">
     </div>
 {% endblock %}
 
 {% block plans %}
     <div class="plan-container">
-        <img src="{{ asset('upload/architecture/gentilly/svg/plansgentilly1-optimized.svg') }}" alt="Plan del proyecto Gentilly 1">
+        <img src="{{ asset('upload/architecture/gentilly/svg/plansgentilly1-optimized.svg') }}" class="plan-image" alt="Plan del proyecto Gentilly 1">
         <p>Avant</p>
     </div>
     <div class="plan-container">
-        <img src="{{ asset('upload/architecture/gentilly/svg/plansgentilly2-optimized.svg') }}" alt="Plan del proyecto Gentilly 2">
+        <img src="{{ asset('upload/architecture/gentilly/svg/plansgentilly2-optimized.svg') }}" class="plan-image" alt="Plan del proyecto Gentilly 2">
         <p>Aprés</p>
     </div>
 {% endblock %}

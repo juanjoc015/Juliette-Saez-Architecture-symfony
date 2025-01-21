@@ -5,6 +5,12 @@
 {% block stylesheets %}
     {{ parent() }}
     <link rel="stylesheet" href="{{ asset('styles/pages/architecture/projects/tudeils.scss') }}">
+    <link rel="stylesheet" href="{{ asset('styles/components/_longtext.scss') }}">
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ importmap('longtext') }}
 {% endblock %}
 
 {% block body %}
@@ -12,8 +18,8 @@
         <section id="section1">
             <div class="image-tudeils">
                 <picture>
-                    <source srcset="{{ asset('upload/architecture/tudeils/tudeils.jpeg') | imagine_filter('image_mobile_tudeils') }}" media="(max-width: 768px)">
-                    <img src="{{ asset('upload/architecture/tudeils/tudeils.jpeg') | imagine_filter('image_desktop_tudeils') }}" alt="plan-proyect1">
+                    <source srcset="{{ asset('upload/architecture/tudeils/tudeils.jpeg')|imagine_filter('image_mobile_tudeils') }}" media="(max-width: 768px)">
+                    <img src="{{ asset('upload/architecture/tudeils/tudeils.jpeg')|imagine_filter('image_desktop_tudeils') }}" alt="plan-proyect1">
                 </picture>
             </div>
 
@@ -24,36 +30,37 @@
                     <p><span class="label">Surface :</span> 250 m2</p>
                     <p><span class="label">Budget :</span> NC</p>
                     <p><span class="label">Statut :</span> Livré en juillet 2024</p>
-                    <p>
-                        Ce projet vise la rénovation complète d’un ensemble immobilier situé sur un terrain pentu de 4 700 m², au cœur d’un ancien corps de ferme riche en histoire. L’ensemble se compose de deux maisons attenantes : la première, construite en 1864 et coiffée d’un toit mansardé en ardoise, constitue la partie principale à rénover ; la seconde, plus ancienne et dotée d’une toiture pointue en tuile ainsi que d’une petite tour datant de la guerre de Cent Ans, reste dans son état actuel pour des raisons budgétaires. Au moment de l’achat, la maison principale était inhabitable, présentant de graves défauts : canalisations en fibrociment contenant de l’amiante, réseau électrique non mis à la terre et dangereux, fosse septique jamais mise en service, absence de salles d’eau et de toilettes, ainsi qu’une unique arrivée d’eau au rez-de-chaussée. Les travaux ont débuté par une mise en sécurité générale : désamiantage, remplacement complet de l’installation électrique, pose d’un nouveau compteur et mise à la terre, retrait des peintures au plomb, puis installation d’une nouvelle fosse septique aux normes. Une fois ces urgences traitées, la rénovation intérieure a permis de rendre la maison fonctionnelle et chaleureuse. La salle à manger a été agrandie de 15 m² à 26 m² par la suppression d’une cloison, le parquet a été poncé et vitrifié, et les tomettes d’origine du couloir ont été restaurées. À l’étage, la création d’une salle de bain avec toilettes et de zones de rangement a nettement amélioré le confort. Les plafonds ont été mis à nu pour valoriser les poutres d’origine, à l’exception d’une chambre où elles demeurent cachées. À l’extérieur, les joints entre les pierres ont été refaits, les gouttières remplacées et le bois visible autour de l’œil-de-bœuf remplacé par de la pierre. L’ensemble de ces interventions redonne à la maison son caractère historique tout en l’adaptant aux exigences de la vie moderne.
+                    <p class="text">
+                        Ce projet vise la rénovation complète d’un ensemble immobilier situé sur un terrain pentu de 4 700 m², au cœur d’un ancien corps de ferme riche en histoire. L’ensemble se compose de deux maisons attenantes : la première, construite en 1864 et coiffée d’un toit mansardé en ardoise, constitue la partie principale à rénover ; la seconde, plus ancienne et dotée d’une toiture pointue en tuile ainsi que d’une petite tour datant de la guerre de Cent Ans, reste dans son état actuel pour des raisons budgétaires. Au moment de l’achat, la maison principale était inhabitable, présentant de graves défauts : canalisations en fibrociment contenant de l’amiante, réseau électrique non mis à la terre et dangereux, fosse septique jamais mise en service, absence de salles d’eau et de toilettes, ainsi qu’une unique arrivée d’eau au rez-de-chaussée. Les travaux ont débuté par une mise en sécurité générale : désamiantage, remplacement complet de l’installation électrique, pose d’un nouveau compteur et mise à la terre, retrait des peintures au plomb, puis installation d’une nouvelle fosse septique aux normes. Une fois ces urgences traitées, la rénovation intérieure a permis de rendre la maison fonctionnelle et chaleureuse. La salle à manger a été agrandie de 15 m² à 26 m² par la suppression d’une cloison, le parquet a été poncé et vitrifié, et les tomettes d’origine du couloir ont été restaurées. À l’étage, la création d’une salle de bain avec toilettes et de zones de rangement a nettement amélioré le confort. Les plafonds ont été mis à nu pour valoriser les poutres d’origine, à l’exception d’une chambre où elles demeurent cachées. À l’extérieur, les joints entre les pierres ont été refaits, les gouttières remplacées et le bois visible autour de l’œil-de-bœuf remplacé par de la pierre. L’ensemble de ces interventions redonne à la maison son caractère historique tout en l’adaptant aux exigences de la vie moderne.                        
                     </p>
+                    <button class="toggle-btn">Lire plus</button>
             </div>
         </section>
 
         <section id="section2">
             <div class="plans" data-modal="pictures"> 
                 <div class="svg-tudeils">
-                    <img src="{{ asset('upload/architecture/tudeils/svg/elevation2-optimized.svg') }}" alt="Plan del proyecto Tudeils 2">  
+                    <img src="{{ asset('upload/architecture/tudeils/svg/elevation2-optimized.svg') }}" class="plan-image" alt="Plan del proyecto Tudeils 2">  
                     <p>Façade Sud </p>
                 </div>
                 <div class="svg-tudeils">
-                    <img src="{{ asset('upload/architecture/tudeils/svg/elevation1-optimized.svg') }}" alt="Plan del proyecto Tudeils 1">
+                    <img src="{{ asset('upload/architecture/tudeils/svg/elevation1-optimized.svg') }}" class="plan-image" alt="Plan del proyecto Tudeils 1">
                     <p>Façade Ouest</p>
                 </div>
                 <div class="svg-tudeils">
-                    <img src="{{ asset('upload/architecture/tudeils/svg/planexistant2-optimized.svg') }}" alt="Plan del proyecto Tudeils 4">
+                    <img src="{{ asset('upload/architecture/tudeils/svg/planexistant2-optimized.svg') }}" class="plan-image" alt="Plan del proyecto Tudeils 4">
                     <p>RDC - Avant</p>
                 </div>
                 <div class="svg-tudeils">
-                    <img src="{{ asset('upload/architecture/tudeils/svg/planexistant1-optimized.svg') }}" alt="Plan del proyecto Tudeils 3">
+                    <img src="{{ asset('upload/architecture/tudeils/svg/planexistant1-optimized.svg') }}" class="plan-image" alt="Plan del proyecto Tudeils 3">
                     <p>R+1 - Avant</p>
                 </div>
                 <div class="svg-tudeils">
-                    <img src="{{ asset('upload/architecture/tudeils/svg/planprojet2-optimized.svg') }}" alt="Plan del proyecto Tudeils 6">     
+                    <img src="{{ asset('upload/architecture/tudeils/svg/planprojet2-optimized.svg') }}" class="plan-image" alt="Plan del proyecto Tudeils 6">     
                     <p>RDC - Après</p>
                 </div>
                 <div class="svg-tudeils">
-                    <img src="{{ asset('upload/architecture/tudeils/svg/planprojet1-optimized.svg') }}" alt="Plan del proyecto Tudeils 5">
+                    <img src="{{ asset('upload/architecture/tudeils/svg/planprojet1-optimized.svg') }}" class="plan-image" alt="Plan del proyecto Tudeils 5">
                     <p>R+1 - Après</p>
                 </div>
             </div>
@@ -185,19 +192,19 @@
                         srcset="{{ asset('upload/architecture/tudeils/aprés/tudeils18.jpg') | imagine_filter('images_gallery_mobile_tudeils') }}" 
                         media="(max-width: 660px)"
                     >
-                    <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils18.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}  " alt="">
+                    <img src="{{ asset('upload/architecture/tudeils/aprés/tudeils18.jpg')|imagine_filter('images_gallery_desktop_tudeils') }}  " alt="">
                 </picture>
             </div>
             <div class="pictures bw" data-modal="pictures">
-                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw1.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}" alt="">
-                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw2.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}" alt="">
-                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw3.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}" alt="">
-                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw4.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}" alt="">
-                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw5.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}" alt="">
-                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw6.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}" alt="">
-                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw7.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}" alt="">
-                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw8.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}" alt="">
-                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw9.jpg') | imagine_filter('images_gallery_desktop_tudeils') }}" alt="">
+                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw1.jpg')|imagine_filter('images_gallery_desktop_tudeils') }}" alt="">
+                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw2.jpg')|imagine_filter('images_gallery_desktop_tudeils') }}" alt="">
+                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw3.jpg')|imagine_filter('images_gallery_desktop_tudeils') }}" alt="">
+                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw4.jpg')|imagine_filter('images_gallery_desktop_tudeils') }}" alt="">
+                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw5.jpg')|imagine_filter('images_gallery_desktop_tudeils') }}" alt="">
+                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw6.jpg')|imagine_filter('images_gallery_desktop_tudeils') }}" alt="">
+                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw7.jpg')|imagine_filter('images_gallery_desktop_tudeils') }}" alt="">
+                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw8.jpg')|imagine_filter('images_gallery_desktop_tudeils') }}" alt="">
+                <img src="{{ asset('upload/architecture/tudeils/avant/tudeilsbw9.jpg')|imagine_filter('images_gallery_desktop_tudeils') }}" alt="">
             </div>
         </section>
     </div>
