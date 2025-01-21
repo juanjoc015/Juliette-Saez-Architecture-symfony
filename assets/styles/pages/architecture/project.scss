@@ -27,19 +27,18 @@
                 width: 100%;
                 img {
                     display: block;
+
                     width: 90%;
                     height: auto;
                     object-fit: cover;
                     cursor: pointer;
                     align-self: flex-end;
-                }
-                p {
-                    font-style: italic;
-                    color: #8f8888;
-                    margin-left: 8rem;
                     
                 }
-
+                p {
+                    font-style: italic;                    margin: 0 auto;
+                    margin-left: 4rem;
+                }
             }
             
             
